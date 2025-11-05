@@ -31,7 +31,7 @@ export default function Skills() {
       { name: "Express", icon: <FaBolt className="w-6 h-6" color="#FFFFFF" /> }, // fallback
       { name: "MongoDB", icon: <SiMongodb className="w-6 h-6" color="#47A248" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="w-6 h-6" color="#4169E1" /> },
-      { name: "Nest.js", icon: <SiNestjs className="w-6 h-6" color="#DF0000" /> },
+      { name: "FastApi", icon: <SiFastapi className="w-6 h-6" color="#22C55E" /> },
     ],
     "Realtime / Messaging": [
       { name: "Socket.io", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
