@@ -34,7 +34,7 @@ export default function AboutMe() {
         </p>
 
         {/* Tech stack with icons */}
-        <div className="flex flex-wrap justify-center gap-6 text-blue-300 text-2xl">
+        <div className="flex flex-wrap justify-center gap-6 text-blue-400 text-3xl">
           <SiReact title="React" />
           <SiNextdotjs title="Next.js" />
           <SiTailwindcss title="Tailwind CSS" />

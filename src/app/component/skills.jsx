@@ -5,9 +5,7 @@ import {
   SiTypescript, SiNextdotjs, SiTailwindcss, SiMongodb, 
   SiGit, SiGithub, SiPostgresql, SiDocker, SiVercel, SiRedis, 
   SiFastapi,
-  SiPostman,
-  SiSwagger,
-  SiNestjs
+  SiRabbitmq
 } from "react-icons/si";
 import { 
   FaNodeJs, FaBolt, FaBroadcastTower, FaDatabase, FaCubes, FaNetworkWired 
@@ -37,7 +35,7 @@ export default function Skills() {
       { name: "Socket.io", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
       { name: "WebSocket", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> }, // 🔗 fallback
       { name: "Redis Streams", icon: <SiRedis className="w-6 h-6" color="#D82C20" /> },
-      { name: "ZeroMQ", icon: <FaBolt className="w-6 h-6" color="#DF0000" /> },
+      { name: "RabbitMQ", icon: <SiRabbitmq className="w-6 h-6" color="#F05032" /> },
     ],
     "Other Tools": [
       { name: "Git", icon: <SiGit className="w-6 h-6" color="#F05032" /> },
