@@ -10,7 +10,7 @@ export default function Projects() {
     {
       title: "🍕 Pizza Ordering Website",
       description: "A sleek, responsive pizza ordering platform with interactive UI, real-time selections, and a tasty user experience.",
-      link: "https://pizza-heaven-ge4m.vercel.app/",
+      link: "https://pizza-heaven-pink.vercel.app/",
     },
     {
       title: "⛪Fellowship Website",
