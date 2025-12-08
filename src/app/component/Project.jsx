@@ -12,11 +12,11 @@ export default function Projects() {
       description: "A sleek, responsive pizza ordering platform with interactive UI, real-time selections, and a tasty user experience.",
       link: "https://pizza-heaven-pink.vercel.app/",
     },
-    {
-      title: "⛪Fellowship Website",
-      description: "A responsive website for my campus fellowship to share events, announcements, and connect members.",
-      link: "https://cssf-funaab.vercel.app/",
-    },
+   // {
+     // title: "⛪Fellowship Website",
+    //  description: "A responsive website for my campus fellowship to share events, announcements, and connect members.",
+    //  link: "https://cssf-funaab.vercel.app/",
+   // },
   ];
 
   return (
