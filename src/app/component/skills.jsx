@@ -5,7 +5,9 @@ import {
   SiTypescript, SiNextdotjs, SiTailwindcss, SiMongodb, 
   SiGit, SiGithub, SiPostgresql, SiDocker, SiVercel, SiRedis, 
   SiFastapi,
-  SiRabbitmq
+  SiRabbitmq,
+  SiPrisma,
+  SiNestjs
 } from "react-icons/si";
 import { 
   FaNodeJs, FaBolt, FaBroadcastTower, FaDatabase, FaCubes, FaNetworkWired 
@@ -27,9 +29,9 @@ export default function Skills() {
       { name: "Python", icon: <SiPython className="w-6 h-6" color="#3776AB" /> },
       { name: "Node.js", icon: <FaNodeJs className="w-6 h-6" color="#339933" /> },
       { name: "Express", icon: <FaBolt className="w-6 h-6" color="#FFFFFF" /> }, // fallback
-      { name: "MongoDB", icon: <SiMongodb className="w-6 h-6" color="#47A248" /> },
+      { name: "Prisma", icon: <SiPrisma className="w-6 h-6" color="#3178c6" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="w-6 h-6" color="#4169E1" /> },
-      { name: "FastApi", icon: <SiFastapi className="w-6 h-6" color="#22C55E" /> },
+      { name: "Nest.js", icon: <SiNestjs className="w-6 h-6" color="#D82C20" /> },
     ],
     "Realtime / Messaging": [
       { name: "Socket.io", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
@@ -59,7 +61,7 @@ export default function Skills() {
                   key={index}
                   className="flex items-center gap-2 p-4 text-blue-200 shadow-white bg-[#071026] 
                              dark:bg-gray-800 rounded-lg font-bold shadow-md transform transition 
-                             duration-300 hover:-translate-y-1 hover:bg-gray-200 dark:hover:bg-gray-700"
+                             duration-300 hover:-translate-y-1 hover:bg-gray-500 dark:hover:bg-gray-700"
                 >
                   {skill.icon}
                   <span>{skill.name}</span>

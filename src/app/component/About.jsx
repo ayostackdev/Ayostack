@@ -40,7 +40,7 @@ export default function AboutMe() {
           <SiTailwindcss title="Tailwind CSS" />
           <SiNodedotjs title="Node.js" />
           <SiExpress title="Express.js" />
-          <SiFastapi  title="FastApi"/>
+          <SiNestjs  title="Nest.js"/>
           <SiPostgresql title="PostgreSQL" />
           <SiPython title="Python" />
         </div>
