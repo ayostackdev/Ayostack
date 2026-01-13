@@ -32,7 +32,7 @@ export default function PortfolioCard() {
 
       {/* footer meta */}
       <footer className="mt-5 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-blue-200">
-        <span> FullStack • Next.js • FastApi </span>
+        <span> FullStack • Next.js • Nest.js </span>
         <span>Available for freelance</span>
       </footer>
     </article>
