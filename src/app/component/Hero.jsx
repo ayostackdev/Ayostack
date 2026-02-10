@@ -36,7 +36,7 @@ export default function HeroSection() {
               <FaJs className="text-yellow-400" /> JavaScript Lover
             </span>
             <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-sm">
-              <FaLaptopCode className="text-pink-400" /> TailwindCSS Magician
+              <FaLaptopCode className="text-pink-400" /> CSS Magician
             </span>
           </div>
 

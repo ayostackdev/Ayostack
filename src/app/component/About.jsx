@@ -19,7 +19,7 @@ export default function AboutMe() {
         {/* Intro */}
         <h2 className="text-2xl md:text-3xl font-bold text-blue-200 flex items-center justify-center gap-2">
           <FaLaptopCode className="text-blue-400" /> 
-          I'm Ayokunle Shittu | Full-Stack Developer
+           Ayokunle Shittu | Full-Stack Developer
         </h2>
 
         <p className="text-blue-200 dark:text-gray-300 text-lg flex items-center justify-center gap-2">

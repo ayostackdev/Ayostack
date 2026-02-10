@@ -24,7 +24,7 @@ export default function Footer() {
 
 
     <p className="mt-4 text-sm text-blue-200">
-      © 2026 AYOSTACK. All rights reserved.
+      © {new Date().getFullYear()} AYOSTACK. All rights reserved.
     </p>
 
   </div>
