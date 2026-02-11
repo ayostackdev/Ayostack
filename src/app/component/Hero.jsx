@@ -1,76 +1,75 @@
-// components/HeroSection.jsx
 "use client";
 
 import Image from "next/image";
-import { 
-  FaArrowRight, FaCode, FaReact, FaJs, FaLaptopCode 
-} from "react-icons/fa";
+import { motion } from "framer-motion"; // Add Framer Motion
+import { FaArrowRight, FaLinkedin } from "react-icons/fa";
+import styles from './GlowingBorder.module.css'; // Reuse your spinning border!
 
 export default function HeroSection() {
   return (
-    <section
-      id="hero"
-      className="w-full min-h-screen mt-26 flex items-center justify-center bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-black text-white relative overflow-hidden"
-    >
-      <div className="container mx-auto px-6 lg:px-16 flex flex-col-reverse md:flex-row items-center gap-12 relative z-10">
+    <section id="hero" className="w-full pt-25 min-h-screen flex items-center justify-center bg-[#071026] text-white relative overflow-hidden px-6">
+      
+      {/* Background Blobs for Depth */}
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 blur-[120px] rounded-full" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-teal-500/10 blur-[120px] rounded-full" />
+
+      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-12 relative z-10">
         
         {/* Left: Text Content */}
-        <div className="flex-1 text-center md:text-left space-y-6">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex-1 text-center md:text-left space-y-6"
+        >
+          <p className="text-blue-400 font-mono tracking-widest text-sm uppercase">Available for 2026 Opportunities</p>
+          
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
             Hi, I’m{" "}
-            <span className="bg-gradient-to-r from-blue-400 via-teal-200 to-green-300 bg-clip-text text-transparent animate-text">
-              Ayokunle Shittu
+            <span className="bg-gradient-to-r from-blue-400 via-teal-200 to-green-300 bg-clip-text text-transparent">
+              Ayokunle
             </span>{" "}
-            👋
           </h1>
 
-          {/* Roles as Badges */}
-          <div className="flex flex-wrap justify-center md:justify-start gap-3">
-            <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-sm">
-              <FaCode className="text-blue-400" /> Full-Stack Dev
-            </span>
-            <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-sm">
-              <FaReact className="text-cyan-400" /> Next.js Enthusiast
-            </span>
-            <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-sm">
-              <FaJs className="text-yellow-400" /> JavaScript Lover
-            </span>
-            <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-sm">
-              <FaLaptopCode className="text-pink-400" /> CSS Magician
-            </span>
-          </div>
+          <p className="text-blue-100/70 text-lg md:text-xl max-w-xl">
+            I architect high-performance web applications like <strong>LiteWire</strong> using Next.js and NestJS. Focused on building the future of real-time communication.
+          </p>
 
           {/* CTA Buttons */}
-          <div className="flex justify-center md:justify-start gap-4 pt-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-teal-400 hover:from-blue-600 hover:to-teal-500 rounded-xl shadow-lg flex items-center gap-2 transition-transform hover:scale-105"
-            >
-              View My Work <FaArrowRight />
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
+            <a href="#projects" className="px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center gap-2 transition-all hover:scale-105">
+              View Projects <FaArrowRight />
             </a>
-            <a
-              href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border border-gray-500 hover:border-blue-400 hover:text-blue-400 rounded-xl transition-transform hover:scale-105"
-            >
-              Let’s Connect
+            <a href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2">
+              <FaLinkedin className="text-blue-400" /> LinkedIn
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Right: Profile Image */}
-        <div className="flex-1 flex justify-center relative">
-          <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-[0_0_40px_rgba(59,130,246,0.6)]">
-            <Image
-              src="/toffee-8789.JPG" // replace with your image
-              alt="Profile"
-              fill
-              priority
-              className="object-cover hover:scale-110 transition-transform duration-700"
-            />
+        {/* Right: Profile Image with Spinning Border */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex-1 flex justify-center"
+        >
+          <div className="relative group">
+            {/* The Spinning Halo Effect */}
+            <div className={`absolute -inset-1 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 ${styles.card}`} 
+                 style={{ padding: 0, borderRadius: '50%', minHeight: 'auto' }}>
+            </div>
+            
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-[#071026] z-10">
+              <Image
+                src="/toffee-8789.JPG"
+                alt="Ayokunle Shittu"
+                fill
+                priority
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

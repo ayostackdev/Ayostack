@@ -99,7 +99,7 @@ export default function Skills() {
                   key={index}
                   variants={item}
                   whileHover={{ scale: 1.05 }}
-                  className="flex items-center gap-2 p-4 text-blue-200 shadow-white bg-[#071026] 
+                  className="flex items-center gap-2 p-4 text-blue-200 shadow-teal-50 bg-[#071026] 
                              dark:bg-gray-800 rounded-lg font-bold shadow-md transform transition 
                              duration-300 hover:bg-gray-500 dark:hover:bg-gray-700"
                 >

@@ -4,7 +4,7 @@ import Contact from './component/Contact'
 import Footer  from './component/Footer'
 import Skills from "./component/skills";
 import Testimonials from './component/Testimonial'
-import About from './component/About'
+import AboutMe from './component/About'
 import Glass from './component/Glass'
 import Project from './component/Project'
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
     <div >
    <Header/>
   <HeroSection/>
-  <About/>
+  <AboutMe/>
   <Glass/>
   <Project/>
     <Skills/>
