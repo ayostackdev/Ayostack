@@ -23,7 +23,7 @@ export default function AboutMe() {
   };
 
   return (
-    <section id="about" className="py-24 px-6 bg-[#071026] flex flex-col items-center">
+    <section id="about" className="py-16 px-6 bg-[#071026] flex flex-col items-center">
       <motion.div 
         initial="hidden"
         whileInView="visible"

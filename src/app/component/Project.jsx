@@ -5,20 +5,21 @@ import styles from './GlowingBorder.module.css';
 export default function Projects() {
   const projects = [
     { 
-      title: "🌐 Portfolio Website", 
-      desc: "A responsive personal portfolio to showcase skills and projects.", 
-      link: "https://omogbolahan-shittu.vercel.app/" 
+      title: "⛪ Fellowship Web-application", 
+      desc: "Connecting campus members with events and announcements.", 
+      link: "https://cssf-funaab.vercel.app/" 
     },
-    { 
+ { 
       title: "🍕 Pizza Ordering Website", 
       desc: "Sleek pizza platform with interactive UI and real-time selections.", 
       link: "https://pizza-heaven-pink.vercel.app/" 
     },
-    { 
-      title: "⛪ Fellowship Website", 
-      desc: "Connecting campus members with events and announcements.", 
-      link: "https://cssf-funaab.vercel.app/" 
+     { 
+      title: "🌐 Portfolio Website", 
+      desc: "A responsive personal portfolio to showcase skills and projects.", 
+      link: "https://omogbolahan-shittu.vercel.app/" 
     },
+
   ];
 
   const cardVariants = {
@@ -30,7 +31,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-24 px-6 bg-[#071026] overflow-hidden">
+    <section id="projects" className="py-18 px-6 bg-[#071026] overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-center text-white tracking-tight">
           Featured <span className="text-blue-400">Projects</span>
