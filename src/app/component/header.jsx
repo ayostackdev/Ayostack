@@ -17,7 +17,7 @@ export default function Header() {
   width={100}
   height={30}
   priority /> 
-              <h1 className="animate-pulse text-blue-200 text-2xl">AYOSTACK</h1>
+        <h1 className="animate-pulse text-blue-200 text-2xl">Ayostack</h1>
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-4">
           <Link href="#about" className="text-blue-100 hover:text-white transition">

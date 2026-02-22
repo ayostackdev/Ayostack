@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 
 // Update this section to change your favicon and site info
 export const metadata: Metadata = {
-  title: "AyoStack | Full-Stack Developer", 
-  description: "Portfolio of AyoStack - Specialized in NestJS, Supabase, and GraphQL",
+  title: "Ayostack | Full-Stack Developer", 
+  description: "Portfolio of Ayostack - Specialized in NestJS, Supabase, and GraphQL",
   icons: {
     icon: "/favicon.png", // This looks for 'public/favicon.png'
     apple: "/public/file_0000000034ac622f83b2c662380ff859~3.png", // Optional: for mobile home screens
