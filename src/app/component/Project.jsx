@@ -14,12 +14,6 @@ export default function Projects() {
       desc: "Sleek pizza platform with interactive UI and real-time selections.", 
       link: "https://pizza-heaven-pink.vercel.app/" 
     },
-     { 
-      title: "🌐 Portfolio Website", 
-      desc: "A responsive personal portfolio to showcase skills and projects.", 
-      link: "https://omogbolahan-shittu.vercel.app/" 
-    },
-
   ];
 
   const cardVariants = {
