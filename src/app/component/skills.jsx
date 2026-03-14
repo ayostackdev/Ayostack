@@ -1,25 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
+// Consolidated Si Imports
 import { 
-  SiPython, SiHtml5, SiCss3, SiJavascript, SiReact, 
-  SiTypescript, SiNextdotjs, SiTailwindcss, SiMongodb, 
+  SiPython, SiHtml5, SiCss, SiJavascript, SiReact, 
+  SiTypescript, SiNextdotjs, SiTailwindcss, 
   SiGit, SiGithub, SiPostgresql, SiDocker, SiVercel, SiRedis, 
-  SiFastapi, SiRabbitmq, SiPrisma, SiNestjs, SiSupabase, SiGraphql, 
-  SiExpress,
-  SiPostman
+  SiRabbitmq, SiPrisma, SiNestjs, SiSupabase 
 } from "react-icons/si";
+
+// Consolidated Fa Imports
 import { 
   FaNodeJs, FaBolt, FaBroadcastTower, FaDatabase, FaCubes, FaNetworkWired, 
-  FaCloud
+  FaTable, FaFileExcel
 } from "react-icons/fa";
-import { FaServer } from "react-icons/fa6";
 
 export default function Skills() {
   const categories = {
     Frontend: [
       { name: "HTML5", icon: <SiHtml5 className="w-6 h-6" color="#E34F26" /> },
-      { name: "CSS3", icon: <SiCss3 className="w-6 h-6" color="#1572B6" /> },
+      { name: "CSS3", icon: <SiCss className="w-6 h-6" color="#1572B6" /> },
       { name: "JavaScript", icon: <SiJavascript className="w-6 h-6" color="#F7DF1E" /> },
       { name: "TypeScript", icon: <SiTypescript className="w-6 h-6" color="#3178C6" /> },
       { name: "React.js", icon: <SiReact className="w-6 h-6" color="#61DAFB" /> },
@@ -32,16 +32,20 @@ export default function Skills() {
       { name: "Node.js", icon: <FaNodeJs className="w-6 h-6" color="#339933" /> },
       { name: "Nest.js", icon: <SiNestjs className="w-6 h-6" color="#D82C20" /> },
       { name: "Supabase", icon: <SiSupabase className="w-6 h-6" color="#3ECF8E" /> },
-      { name: "Express", icon: <SiExpress className="w-6 h-6" color="#FFFFFF" /> },
       { name: "Prisma", icon: <SiPrisma className="w-6 h-6" color="#3178c6" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="w-6 h-6" color="#4169E1" /> },
-      { name: "Rest Apis", icon: <SiPostman className="w-6 h-6" color="#4169E1" /> },
     ],
     "Realtime / Messaging": [
       { name: "Socket.io", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
       { name: "WebSocket", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> },
-      { name: "Redis Streams", icon: <SiRedis className="w-6 h-6" color="#D82C20" /> },
+      { name: "Redis Pub/Sub", icon: <SiRedis className="w-6 h-6" color="#D82C20" /> },
       { name: "RabbitMQ", icon: <SiRabbitmq className="w-6 h-6" color="#F05032" /> },
+    ],
+    "Data Analysis": [
+      { name: "Pandas", icon: <FaDatabase className="w-6 h-6" color="#150458" /> },
+      { name: "NumPy", icon: <FaBolt className="w-6 h-6" color="#013243" /> },
+      { name: "Excel", icon: <FaFileExcel className="w-6 h-6" color="#217346" /> },
+      { name: "SQL", icon: <FaTable className="w-6 h-6" color="#336791" /> },
     ],
     "Other Tools": [
       { name: "Git", icon: <SiGit className="w-6 h-6" color="#F05032" /> },
@@ -103,7 +107,8 @@ export default function Skills() {
                              dark:bg-gray-800 rounded-lg font-bold shadow-md transform transition 
                              duration-300 hover:bg-gray-500 dark:hover:bg-gray-700"
                 >
-                  {skill.icon}
+                  {/* Safety check: if icon is undefined, render a fallback table icon */}
+                  {skill.icon ? skill.icon : <FaTable className="w-6 h-6" />}
                   <span>{skill.name}</span>
                 </motion.div>
               ))}
