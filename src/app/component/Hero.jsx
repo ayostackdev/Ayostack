@@ -57,7 +57,7 @@ export default function HeroSection() {
                  style={{ padding: 0, borderRadius: '50%', minHeight: 'auto' }}>
             </div>
             
-            <div className="relative w-64 h-68 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-[#071026] z-10">
+            <div className="relative w-64 h-66 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-[#071026] z-10">
               <Image
                 src="/toffee-8789.JPG"
                 alt="Ayokunle Shittu"
