@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { motion } from "framer-motion"; // Add Framer Motion
 import { FaArrowRight, FaLinkedin } from "react-icons/fa";
@@ -8,14 +7,13 @@ import styles from './GlowingBorder.module.css'; // Reuse your spinning border!
 export default function HeroSection() {
   return (
     <section id="hero" className="w-full pt-25 min-h-screen flex items-center justify-center bg-[#071026] text-white relative overflow-hidden px-6">
-      
-      {/* Background Blobs for Depth */}
+
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 blur-[120px] rounded-full" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-teal-500/10 blur-[120px] rounded-full" />
 
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-12 relative z-10">
         
-        {/* Left: Text Content */}
+
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -30,12 +28,12 @@ export default function HeroSection() {
               Ayokunle
             </span>{" "}
           </h1>
-
-          <p className="text-blue-100/70 text-lg md:text-xl max-w-xl">
-            I architect high-performance web applications like <strong>LiteWire</strong> using Next.js and NestJS. Focused on building the future of real-time communication.
+             <p className="text-blue-100/70 text-lg md:text-xl max-w-xl">
+             Bridging Statistical Science and Fullstack Engineering.
+             Architecting with Next.js • NestJS | Analyzing with Python • SQL <br /> <br />
+             <span className="text-white/90 italic font-medium">Current: Data & BI Intern @ SunFi</span>
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
             <a href="#projects" className="px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center gap-2 transition-all hover:scale-105">
               View Projects <FaArrowRight />
@@ -46,7 +44,7 @@ export default function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Right: Profile Image with Spinning Border */}
+
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -54,12 +52,12 @@ export default function HeroSection() {
           className="flex-1 flex justify-center"
         >
           <div className="relative group">
-            {/* The Spinning Halo Effect */}
+    
             <div className={`absolute -inset-1 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 ${styles.card}`} 
                  style={{ padding: 0, borderRadius: '50%', minHeight: 'auto' }}>
             </div>
             
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-[#071026] z-10">
+            <div className="relative w-64 h-68 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-[#071026] z-10">
               <Image
                 src="/toffee-8789.JPG"
                 alt="Ayokunle Shittu"

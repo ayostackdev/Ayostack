@@ -22,7 +22,7 @@ export default function Footer() {
 
 
 
-    <p className="mt-4 text-sm text-blue-200">
+    <p className="mt-4 text-bold text-blue-200">
       © {new Date().getFullYear()} Ayostack. All rights reserved.
     </p>
 
