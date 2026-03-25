@@ -11,8 +11,8 @@ import {
 
 // Consolidated Fa Imports
 import { 
-  FaNodeJs, FaBolt, FaBroadcastTower, FaDatabase, FaCubes, FaNetworkWired, 
-  FaTable, FaFileExcel
+  FaNodeJs, FaBolt, FaBroadcastTower, FaCubes, FaNetworkWired, 
+  FaTable, 
 } from "react-icons/fa";
 
 export default function Skills() {
@@ -40,12 +40,6 @@ export default function Skills() {
       { name: "WebSocket", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> },
       { name: "Redis Pub/Sub", icon: <SiRedis className="w-6 h-6" color="#D82C20" /> },
       { name: "RabbitMQ", icon: <SiRabbitmq className="w-6 h-6" color="#F05032" /> },
-    ],
-    "Data Analysis": [
-      { name: "Pandas", icon: <FaDatabase className="w-6 h-6" color="#150458" /> },
-      { name: "NumPy", icon: <FaBolt className="w-6 h-6" color="#013243" /> },
-      { name: "Excel", icon: <FaFileExcel className="w-6 h-6" color="#217346" /> },
-      { name: "SQL", icon: <FaTable className="w-6 h-6" color="#336791" /> },
     ],
     "Other Tools": [
       { name: "Git", icon: <SiGit className="w-6 h-6" color="#F05032" /> },

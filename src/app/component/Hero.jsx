@@ -28,11 +28,15 @@ export default function HeroSection() {
               Ayokunle
             </span>{" "}
           </h1>
-             <p className="text-blue-100/70 text-lg md:text-xl max-w-xl">
-             Bridging Statistical Science and Fullstack Engineering.
-             Architecting with Next.js • NestJS | Analyzing with Python • SQL <br /> <br />
-             <span className="text-white/90 italic font-medium">Current: Data & BI Intern @ SunFi</span>
-          </p>
+          <p className="text-blue-100/70 text-lg md:text-xl max-w-xl leading-relaxed">
+  Engineering high-performance systems where <span className="text-white">Statistical Science</span> meets <span className="text-white">Fullstack Architecture</span>.
+  <br /><br />
+  Mastering the core of <span className="font-mono">Next.js • NestJS • PostgreSQL</span> to build data-driven solutions.
+  <br /><br />
+  <span className="text-white/90 italic font-medium border-l-2 border-blue-400 pl-4">
+    Currently scaling efficiency as a Data & BI Intern @ SunFi
+  </span>
+</p>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
             <a href="#projects" className="px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center gap-2 transition-all hover:scale-105">
