@@ -28,15 +28,35 @@ export default function HeroSection() {
               Ayokunle
             </span>{" "}
           </h1>
-          <p className="text-blue-100/70 text-lg md:text-xl max-w-xl leading-relaxed">
-  Engineering high-performance systems where <span className="text-white">Statistical Science</span> meets <span className="text-white">Fullstack Architecture</span>.
-  <br /><br />
-  Mastering the core of <span className="font-mono">Next.js • NestJS • PostgreSQL</span> to build data-driven solutions.
-  <br /><br />
-  <span className="text-white/90 italic font-medium border-l-2 border-blue-400 pl-4">
-    Currently scaling efficiency as a Data & BI Intern @ SunFi
-  </span>
-</p>
+  <div className="space-y-6">
+  <p className="text-blue-100/70 text-lg md:text-xl max-w-2xl leading-relaxed">
+    {/* The Vision: Where Science meets Architecture */}
+    <span className="block mb-4">
+      Architecting high-performance systems where 
+      <span className="text-white font-semibold"> Statistical Intelligence </span> 
+      converges with 
+      <span className="text-white font-semibold"> Fullstack Architecture</span>.
+    </span>
+
+    {/* The Stack: The "Engine" */}
+    <span className="block mb-6">
+      Leveraging the 
+      <span className="font-mono text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded"> 
+        Next.js • NestJS • PostgreSQL 
+      </span> 
+      ecosystem to build data-driven solutions that scale.
+    </span>
+
+    {/* The Current Mission: SunFi */}
+    <span className="flex items-center gap-3 text-white/90 italic font-medium border-l-4 border-blue-500 pl-4 bg-blue-500/5 py-3 rounded-r-lg">
+      <span className="relative flex h-3 w-3">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+      </span>
+      Currently scaling operational efficiency as a Product-Minded Data & BI Intern @ SunFi
+    </span>
+  </p>
+</div>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
             <a href="#projects" className="px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center gap-2 transition-all hover:scale-105">
