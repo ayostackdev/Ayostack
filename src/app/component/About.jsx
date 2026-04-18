@@ -46,7 +46,7 @@ export default function AboutMe() {
         {/* Concise Bio */}
         <motion.p variants={itemVariants} className="text-blue-100/70 text-lg leading-relaxed max-w-2xl mx-auto">
           I engineer high-performance systems where data meets logic. 
-          Currently architecting <strong>LiteWire</strong> and optimizing 
+          Currently architecting <strong>DashIQ</strong> and optimizing 
           energy-fintech workflows at <strong>SunFi</strong> using 
           Next.js, NestJS, and PostgreSQL.
         </motion.p>

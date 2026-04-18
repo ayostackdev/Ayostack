@@ -17,6 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ayostack.dev"),
 
+  verification: {
+  google: "C4Rd0wWrj50wb5u9oHgFCx-yQA8VA9qyfoeSZ_nJ27U",
+},
+
   title: {
     default:
       "Ayokunle Shittu | Full-Stack Developer | Data & Web Applications",
