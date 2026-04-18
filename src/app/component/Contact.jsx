@@ -23,6 +23,7 @@ export default function ContactForm() {
       if (data.success) {
         setStatus("✅ Message sent!");
         setForm({ name: "", email: "", message: "" });
+        setTimeout(() => setStatus(""), 3000);
       } else {
         setStatus("❌ Failed to send message");
       }
