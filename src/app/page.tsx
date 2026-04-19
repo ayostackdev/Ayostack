@@ -4,7 +4,6 @@ import Contact from './component/Contact'
 import Footer  from './component/Footer'
 import Skills from "./component/skills";
 import Testimonials from './component/Testimonial'
-import AboutMe from './component/About'
 import Glass from './component/Glass'
 import Project from './component/Project'
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
     <div className="premium-shell">
    <Header/>
   <HeroSection/>
-  <AboutMe/>
   <Glass/>
   <Project/>
     <Skills/>

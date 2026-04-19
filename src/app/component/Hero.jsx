@@ -2,9 +2,28 @@
 import Image from "next/image";
 import { motion } from "framer-motion"; // Add Framer Motion
 import { FaArrowRight, FaLinkedin } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNestjs,
+  SiPostgresql,
+  SiPrisma,
+  SiSupabase,
+  SiPython,
+} from "react-icons/si";
 import styles from './GlowingBorder.module.css'; // Reuse your spinning border!
 
 export default function HeroSection() {
+  const techStack = [
+    { name: "Next.js", icon: SiNextdotjs, hoverClass: "hover:text-white" },
+    { name: "NestJS", icon: SiNestjs, hoverClass: "hover:text-rose-400" },
+    { name: "PostgreSQL", icon: SiPostgresql, hoverClass: "hover:text-blue-300" },
+    { name: "Prisma", icon: SiPrisma, hoverClass: "hover:text-sky-100" },
+    { name: "Supabase", icon: SiSupabase, hoverClass: "hover:text-emerald-400" },
+    { name: "Tailwind CSS", icon: SiTailwindcss, hoverClass: "hover:text-cyan-300" },
+    { name: "Python", icon: SiPython, hoverClass: "hover:text-yellow-300" },
+  ];
+
   return (
     <section id="hero" className="w-full pt-25 min-h-screen flex items-center justify-center bg-[#071026] text-white relative overflow-hidden px-6">
 
@@ -56,11 +75,30 @@ export default function HeroSection() {
   </p>
 </div>
 
+          <div className="premium-card-soft rounded-2xl px-5 py-4 w-fit md:w-full max-w-2xl mx-auto md:mx-0">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-blue-300/75 mb-3">Core Technologies</p>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-5 text-blue-300/65">
+              {techStack.map((tech) => {
+                const Icon = tech.icon;
+
+                return (
+                  <span
+                    key={tech.name}
+                    title={tech.name}
+                    className={`inline-flex items-center justify-center w-11 h-11 rounded-xl border border-blue-200/15 bg-[#0b1733]/70 text-blue-300/75 shadow-[0_10px_22px_rgba(2,8,24,0.52),inset_0_1px_0_rgba(255,255,255,0.06),0_0_0_rgba(56,189,248,0)] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-blue-300/45 hover:shadow-[0_16px_34px_rgba(2,8,24,0.68),0_0_28px_rgba(56,189,248,0.34)] ${tech.hoverClass}`}
+                  >
+                    <Icon size={22} className="drop-shadow-[0_0_10px_rgba(125,211,252,0.22)]" />
+                  </span>
+                );
+              })}
+            </div>
+          </div>
+
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
             <a href="#projects" className="premium-button premium-shine px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center gap-2 transition-all hover:scale-105">
               View Featured Projects <FaArrowRight />
             </a>
-            <a href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="premium-shine px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2 premium-card-soft">
+            <a href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="premium-shine px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2 premium-card-soft">
               <FaLinkedin className="text-blue-400" /> LinkedIn Profile
             </a>
           </div>

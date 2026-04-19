@@ -34,9 +34,9 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contacts" className="w-full flex items-center justify-center text-blue-100 bg-[#071026] p-6">
-      <div className="premium-card-soft rounded-3xl p-8 shadow-lg border border-white/40 w-full max-w-md">
-        <h1 className="text-3xl font-bold mb-6 text-center premium-gradient-title">Get in Touch</h1>
+    <section id="contacts" className="w-full flex items-center justify-center text-blue-100 bg-[#071026] px-4 py-3 sm:px-5 sm:py-4">
+      <div className="premium-card-soft rounded-3xl p-6 sm:p-7 shadow-lg border border-white/40 w-full max-w-md">
+        <h1 className="text-3xl font-bold mb-5 text-center premium-gradient-title">Get in Touch</h1>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
           <input
             type="text"

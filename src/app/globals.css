@@ -61,10 +61,27 @@ body {
 .premium-shell {
   position: relative;
   isolation: isolate;
+  --section-space: clamp(1.5rem, 3vw, 3rem);
+  --section-inline: clamp(1rem, 4vw, 2.5rem);
 }
 
 .premium-shell section {
   scroll-margin-top: 110px;
+}
+
+.premium-shell > section:not(#hero),
+.premium-shell > footer {
+  padding-inline: var(--section-inline);
+}
+
+.premium-shell > section + section,
+.premium-shell > section + footer {
+  margin-top: var(--section-space);
+}
+
+.premium-shell > section:not(#hero) {
+  padding-top: clamp(2rem, 4.5vw, 3.75rem);
+  padding-bottom: clamp(2rem, 4.5vw, 3.75rem);
 }
 
 .premium-shell::before,
@@ -137,6 +154,14 @@ footer > * {
 a,
 button {
   transition: transform 200ms ease, box-shadow 220ms ease, background-color 220ms ease, color 220ms ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(125, 211, 252, 0.9);
+  outline-offset: 3px;
 }
 
 a:hover,
@@ -286,6 +311,17 @@ footer .max-w-\[600px\],
   }
   50% {
     transform: translate3d(0, -16px, 0) scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 

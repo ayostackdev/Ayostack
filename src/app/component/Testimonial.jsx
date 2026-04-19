@@ -43,9 +43,12 @@ export default function Testimonials() {
         {/* Dots Navigation */}
         <div className="flex justify-center mt-6 gap-2">
           {testimonials.map((_, index) => (
-            <span
+            <button
               key={index}
+              type="button"
               onClick={() => setCurrent(index)}
+              aria-label={`Show testimonial ${index + 1}`}
+              aria-pressed={index === current}
               className={`h-2.5 w-7 rounded-full cursor-pointer transition-all duration-300 ${
                 index === current ? "bg-sky-300 shadow-[0_0_18px_rgba(125,211,252,0.9)]" : "bg-slate-500/70 hover:bg-slate-400"
               }`}
