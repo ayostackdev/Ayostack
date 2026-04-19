@@ -9,27 +9,34 @@ import {
 
 export default function AboutMe() {
   const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } }
+    hidden: { y: 24, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.55, ease: "easeOut" } }
   };
 
   return (
-    <section id="about" className="py-20 px-6 bg-[#030816] flex flex-col items-center border-t border-white/5">
+    <motion.section
+      id="about"
+      initial={{ opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="py-20 px-6 bg-[#030816] flex flex-col items-center border-t border-white/5"
+    >
       <motion.div 
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+        variants={{ visible: { transition: { staggerChildren: 0.12, delayChildren: 0.06 } } }}
         className="max-w-3xl w-full text-center space-y-6"
       >
         {/* Live Status Badge */}
         <motion.div variants={itemVariants} className="flex justify-center">
-          <span className="px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-400 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+          <span className="premium-card-soft px-4 py-2 rounded-full border border-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-[0.18em] flex items-center gap-2">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            Scaling Efficiency @ SunFi
+              Driving Efficiency at SunFi
           </span>
         </motion.div>
 
@@ -39,16 +46,18 @@ export default function AboutMe() {
             Ayokunle Shittu
           </motion.h2>
           <motion.p variants={itemVariants} className="text-lg md:text-xl text-blue-400 font-semibold">
-            Product Engineer: Statistical Science × Fullstack Architecture
+            Product Engineer: Statistical Science x Full-Stack Architecture
+          </motion.p>
+          <motion.p variants={itemVariants} className="text-sm md:text-base text-blue-200/75 uppercase tracking-[0.14em]">
+            Building data-informed systems with product-level execution
           </motion.p>
         </div>
 
         {/* Concise Bio */}
         <motion.p variants={itemVariants} className="text-blue-100/70 text-lg leading-relaxed max-w-2xl mx-auto">
-          I engineer high-performance systems where data meets logic. 
-          Currently architecting <strong>DashIQ</strong> and optimizing 
-          energy-fintech workflows at <strong>SunFi</strong> using 
-          Next.js, NestJS, and PostgreSQL.
+          I design high-performance software where analytical thinking meets practical product delivery.
+          I am currently building <strong>DashIQ</strong> and improving energy-fintech workflows at <strong>SunFi</strong>,
+          using Next.js, NestJS, and PostgreSQL to deliver measurable outcomes.
         </motion.p>
 
         {/* Tech Stack - Streamlined */}
@@ -68,12 +77,12 @@ export default function AboutMe() {
         <motion.div variants={itemVariants} className="pt-8">
           <a 
             href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162"
-            className="inline-flex items-center gap-3 bg-blue-200 text-[#030816] px-8 py-3 rounded-full font-bold transition-all hover:bg-blue-600 hover:text-white active:scale-95"
+            className="premium-button premium-shine inline-flex items-center gap-3 bg-blue-200 text-[#030816] px-8 py-3 rounded-full font-bold tracking-wide transition-all hover:bg-blue-600 hover:text-white active:scale-95"
           >
-            <FaEnvelope /> Let's Connect
+            <FaEnvelope /> Let us connect on LinkedIn
           </a>
         </motion.div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 }

@@ -9,7 +9,7 @@ import Glass from './component/Glass'
 import Project from './component/Project'
 export default function Home() {
   return (
-    <div >
+    <div className="premium-shell">
    <Header/>
   <HeroSection/>
   <AboutMe/>

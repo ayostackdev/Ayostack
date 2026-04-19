@@ -9,7 +9,7 @@
   padding: 3rem 2rem;
   width: 100%;
   min-height: 320px;
-  background: rgba(7, 16, 38, 0.4); 
+  background: linear-gradient(160deg, rgba(10, 22, 50, 0.78), rgba(8, 17, 40, 0.58));
   -webkit-backdrop-filter: blur(16px);
    backdrop-filter: blur(16px);
   border-radius: 24px;
@@ -19,10 +19,11 @@
   z-index: 0;
   
   /* 3D Tilt Setup */
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.45s ease, border-color 0.3s ease;
   transform-style: preserve-3d;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(184, 214, 255, 0.16);
+  box-shadow: 0 18px 42px rgba(3, 9, 24, 0.48);
 }
 
 .card::before {
@@ -30,24 +31,33 @@
   position: absolute;
   inset: -1.5px;
   z-index: -2;
-  background: conic-gradient(from var(--angle), transparent, #3b82f6, #2dd4bf, transparent, #3b82f6,#f97316,#6b21a8);
+  background: conic-gradient(
+    from var(--angle),
+    rgba(59, 130, 246, 0),
+    rgba(59, 130, 246, 0.95),
+    rgba(45, 212, 191, 0.9),
+    rgba(244, 114, 182, 0.85),
+    rgba(249, 115, 22, 0.8),
+    rgba(59, 130, 246, 0)
+  );
   border-radius: 25px;
-  animation: spin 4s linear infinite;
+  animation: spin 4.8s linear infinite;
 }
 
 .card::after {
   content: "";
   position: absolute;
   inset: 1px; 
-  background: rgba(7, 16, 38, 0.9); 
+  background: linear-gradient(180deg, rgba(8, 17, 40, 0.92), rgba(7, 16, 38, 0.88));
   border-radius: 23px;
   z-index: -1;
 }
 
 .card:hover {
   /* Stronger Tilt + Lift */
-  transform: perspective(1200px) rotateX(12deg) rotateY(-10deg) translateY(-15px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(59, 130, 246, 0.2);
+  transform: perspective(1200px) rotateX(10deg) rotateY(-8deg) translateY(-12px);
+  border-color: rgba(142, 195, 255, 0.45);
+  box-shadow: 0 34px 68px rgba(3, 9, 24, 0.62), 0 0 24px rgba(59, 130, 246, 0.25);
 }
 
 /* Subtle "Pop" for text on hover */

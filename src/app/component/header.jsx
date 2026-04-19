@@ -17,19 +17,19 @@ export default function Header() {
   width={100}
   height={30}
   priority /> 
-        <h1 className="animate-pulse text-blue-200 text-2xl">Ayostack</h1>
+        <h1 className="text-2xl font-extrabold tracking-[0.08em] premium-gradient-title">Ayostack</h1>
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-4">
-          <Link href="#about" className="text-blue-100 hover:text-white transition">
+          <Link href="#about" className="premium-nav-link text-blue-100 hover:text-white transition">
             About
           </Link>
-          <Link href="#projects" className="text-blue-100 hover:text-white transition">
-            Project
+          <Link href="#projects" className="premium-nav-link text-blue-100 hover:text-white transition">
+            Projects
           </Link>
-          <Link href="#skills" className="text-blue-100 hover:text-white transition">
+          <Link href="#skills" className="premium-nav-link text-blue-100 hover:text-white transition">
             Skills
           </Link>
-          <Link href="#contacts" className="text-blue-100 hover:text-white transition">
+          <Link href="#contacts" className="premium-nav-link text-blue-100 hover:text-white transition">
             Contact
           </Link>
         </nav>
@@ -47,17 +47,17 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <nav className="flex flex-col md:hidden bg-[#071026] absolute top-16 right-0 p-4 w-[200px] z-10 gap-4">
-          <Link href="#about" className="text-blue-100 hover:text-white transition">
+        <nav className="flex flex-col md:hidden bg-[#071026]/90 backdrop-blur-xl border border-white/10 rounded-2xl absolute top-16 right-3 p-4 w-[200px] z-10 gap-4 shadow-2xl">
+          <Link href="#about" className="premium-nav-link text-blue-100 hover:text-white transition">
             About
           </Link>
-          <Link href="#projects" className="text-blue-100 hover:text-white transition">
-            Project
+          <Link href="#projects" className="premium-nav-link text-blue-100 hover:text-white transition">
+            Projects
           </Link>
-          <Link href="#skills" className="text-blue-100 hover:text-white transition">
+          <Link href="#skills" className="premium-nav-link text-blue-100 hover:text-white transition">
             Skills
           </Link>
-          <Link href="#contacts" className="text-blue-100 hover:text-white transition">
+          <Link href="#contacts" className="premium-nav-link text-blue-100 hover:text-white transition">
             Contact
           </Link>
         </nav>

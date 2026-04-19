@@ -5,34 +5,53 @@ import styles from './GlowingBorder.module.css';
 export default function Projects() {
   const projects = [
     { 
-      title: "⛪ Fellowship Web-application", 
-      desc: "Connecting campus members with events and announcements.", 
+      title: "Fellowship Web Platform", 
+      desc: "A digital platform that keeps campus members connected through events, updates, and announcements.", 
       link: "https://cssf-funaab.vercel.app/" 
     },
  { 
-      title: "🍕 Pizza Ordering Website", 
-      desc: "Sleek pizza platform with interactive UI and real-time selections.", 
+      title: "Pizza Ordering Experience", 
+      desc: "A modern ordering interface with interactive flows and real-time customization.", 
       link: "https://pizza-heaven-five.vercel.app/" 
     },
   ];
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 36, scale: 0.985 },
     visible: (i) => ({
-      opacity: 1, y: 0,
-      transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" },
+      opacity: 1, y: 0, scale: 1,
+      transition: { delay: i * 0.14, duration: 0.62, ease: [0.22, 1, 0.36, 1] },
     }),
   };
 
   return (
-    <section id="projects" className="py-18 px-6 bg-[#071026] overflow-hidden">
+    <motion.section
+      id="projects"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.68, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.15 }}
+      className="py-18 px-6 bg-[#071026] overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-center text-white tracking-tight">
+        <motion.h1
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55 }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-extrabold mb-4 text-center text-white tracking-tight"
+        >
           Featured <span className="text-blue-400">Projects</span>
-        </h1>
-        <p className="text-blue-200/60 text-center mb-16 max-w-2xl mx-auto">
-          A collection of my recent work in web development, focusing on performance, UI/UX, and scalability.
-        </p>
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.08 }}
+          viewport={{ once: true }}
+          className="text-blue-200/60 text-center mb-16 max-w-2xl mx-auto"
+        >
+          A curated selection of recent builds focused on performance, user experience, and scalable architecture.
+        </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {projects.map((project, index) => (
@@ -59,9 +78,9 @@ export default function Projects() {
                   href={project.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-full py-3.5 bg-white/10 hover:bg-blue-600 border border-white/20 hover:border-blue-400 text-white font-semibold rounded-full transition-all duration-300 flex justify-center items-center gap-2 group backdrop-blur-sm"
+                  className="premium-shine premium-button w-full py-3.5 bg-white/10 hover:bg-blue-600 border border-white/20 hover:border-blue-400 text-white font-semibold rounded-full transition-all duration-300 flex justify-center items-center gap-2 group backdrop-blur-sm"
                 >
-                  View Live Case Study
+                  View Live Project
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </div>
@@ -69,6 +88,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

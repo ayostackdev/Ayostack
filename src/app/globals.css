@@ -36,6 +36,259 @@ body,html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
+:root {
+  --premium-bg-deep: #060d20;
+  --premium-bg-mid: #0b1733;
+  --premium-bg-soft: #10224a;
+  --premium-border: rgba(159, 196, 255, 0.2);
+  --premium-glass: rgba(11, 23, 51, 0.52);
+  --premium-shadow: 0 30px 80px rgba(3, 8, 22, 0.55);
+}
+
+body {
+  font-family: var(--font-geist-sans), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(59, 130, 246, 0.22), transparent 70%),
+    radial-gradient(700px 420px at 92% 8%, rgba(20, 184, 166, 0.16), transparent 65%),
+    linear-gradient(160deg, var(--premium-bg-deep) 0%, var(--premium-bg-mid) 50%, #071026 100%);
+}
+
+.premium-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.premium-shell section {
+  scroll-margin-top: 110px;
+}
+
+.premium-shell::before,
+.premium-shell::after {
+  content: "";
+  position: fixed;
+  width: 34vw;
+  height: 34vw;
+  border-radius: 999px;
+  filter: blur(90px);
+  z-index: -2;
+  pointer-events: none;
+}
+
+.premium-shell::before {
+  top: 8%;
+  left: -12%;
+  background: rgba(37, 99, 235, 0.2);
+  animation: premiumFloat 18s ease-in-out infinite;
+}
+
+.premium-shell::after {
+  right: -12%;
+  bottom: 5%;
+  background: rgba(16, 185, 129, 0.14);
+  animation: premiumFloat 20s ease-in-out infinite reverse;
+}
+
+header {
+  background: linear-gradient(180deg, rgba(12, 24, 51, 0.88), rgba(12, 24, 51, 0.68)) !important;
+  border-bottom: 1px solid rgba(173, 203, 255, 0.16);
+  box-shadow: 0 14px 36px rgba(5, 12, 30, 0.45);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  backdrop-filter: blur(18px) saturate(1.2);
+}
+
+#about,
+#projects,
+#skills,
+#contacts,
+footer {
+  position: relative;
+  background: linear-gradient(170deg, rgba(7, 16, 38, 0.9), rgba(7, 16, 38, 0.72)) !important;
+}
+
+#about::before,
+#projects::before,
+#skills::before,
+#contacts::before,
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 42px 42px;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+#about > *,
+#projects > *,
+#skills > *,
+#contacts > *,
+footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+a,
+button {
+  transition: transform 200ms ease, box-shadow 220ms ease, background-color 220ms ease, color 220ms ease;
+}
+
+a:hover,
+button:hover {
+  transform: translateY(-1px);
+}
+
+.premium-nav-link {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+
+.premium-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, rgba(147, 197, 253, 0.1), rgba(125, 211, 252, 0.92), rgba(147, 197, 253, 0.1));
+  transition: transform 240ms ease;
+}
+
+.premium-nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.premium-card-soft {
+  border: 1px solid rgba(173, 203, 255, 0.2);
+  background: linear-gradient(165deg, rgba(13, 28, 62, 0.72), rgba(9, 19, 45, 0.45));
+  box-shadow: 0 24px 48px rgba(2, 8, 20, 0.46);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.premium-button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.premium-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, rgba(96, 165, 250, 0.95), rgba(45, 212, 191, 0.85), rgba(59, 130, 246, 0.95));
+  opacity: 0;
+  transition: opacity 260ms ease;
+}
+
+.premium-button:hover::before {
+  opacity: 1;
+}
+
+.premium-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 60%;
+  height: 100%;
+  transform: skewX(-24deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 520ms ease;
+}
+
+.premium-shine:hover::after {
+  left: 150%;
+}
+
+.premium-gradient-title {
+  background: linear-gradient(100deg, #dbeafe 0%, #7dd3fc 42%, #99f6e4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.premium-reveal {
+  animation: premiumRise 680ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.premium-reveal-1 {
+  animation-delay: 90ms;
+}
+
+.premium-reveal-2 {
+  animation-delay: 180ms;
+}
+
+.premium-reveal-3 {
+  animation-delay: 270ms;
+}
+
+@keyframes premiumRise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+input,
+textarea {
+  background: rgba(8, 17, 40, 0.7);
+  color: #e8f1ff;
+  border: 1px solid var(--premium-border) !important;
+  box-shadow: inset 0 0 0 1px rgba(154, 183, 233, 0.06);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(198, 215, 247, 0.55);
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(96, 165, 250, 0.55) !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
+}
+
+#contacts > div,
+.animate-fadeIn,
+footer .max-w-\[600px\],
+.max-w-\[700px\] {
+  border: 1px solid rgba(173, 203, 255, 0.16);
+  box-shadow: var(--premium-shadow);
+  background: linear-gradient(170deg, rgba(11, 23, 51, 0.56), rgba(9, 19, 46, 0.34));
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+@keyframes premiumFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -16px, 0) scale(1.05);
+  }
+}
+
 
 
 

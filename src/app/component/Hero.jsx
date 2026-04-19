@@ -20,31 +20,29 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="flex-1 text-center md:text-left space-y-6"
         >
-          <p className="text-blue-400 font-mono tracking-widest text-sm uppercase">Available for 2026 Opportunities</p>
+          <p className="inline-flex premium-card-soft px-4 py-2 rounded-full text-blue-300 font-mono tracking-[0.18em] text-[11px] uppercase">Open to High-Impact 2026 Opportunities</p>
           
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
-            Hi, I’m{" "}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-[0_14px_30px_rgba(2,8,20,0.5)]">
+            Engineering{" "}
             <span className="bg-gradient-to-r from-blue-400 via-teal-200 to-green-300 bg-clip-text text-transparent">
-              Ayokunle
+              products that perform at scale
             </span>{" "}
           </h1>
+          <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu, Product Engineer focused on performance, reliability, and measurable impact.</p>
   <div className="space-y-6">
-  <p className="text-blue-100/70 text-lg md:text-xl max-w-2xl leading-relaxed">
+  <p className="text-blue-100/70 text-base md:text-lg max-w-2xl leading-relaxed">
     {/* The Vision: Where Science meets Architecture */}
     <span className="block mb-4">
-      Architecting high-performance systems where 
-      <span className="text-white font-semibold"> Statistical Intelligence </span> 
-      converges with 
-      <span className="text-white font-semibold"> Fullstack Architecture</span>.
+      I build dashboards, platforms, and web products that convert data into clear decisions and practical business outcomes.
     </span>
 
     {/* The Stack: The "Engine" */}
     <span className="block mb-6">
-      Leveraging the 
+      Core stack:
       <span className="font-mono text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded"> 
         Next.js • NestJS • PostgreSQL 
       </span> 
-      ecosystem to build data-driven solutions that scale.
+      with a strong focus on scalability, product quality, and execution speed.
     </span>
 
     {/* The Current Mission: SunFi */}
@@ -53,17 +51,17 @@ export default function HeroSection() {
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
       </span>
-      Currently scaling operational efficiency as a Product-Minded Data & BI Intern @ SunFi
+      Currently supporting operational efficiency initiatives at SunFi as a Product-Minded Data and BI Intern
     </span>
   </p>
 </div>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-            <a href="#projects" className="px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center gap-2 transition-all hover:scale-105">
-              View Projects <FaArrowRight />
+            <a href="#projects" className="premium-button premium-shine px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center gap-2 transition-all hover:scale-105">
+              View Featured Projects <FaArrowRight />
             </a>
-            <a href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2">
-              <FaLinkedin className="text-blue-400" /> LinkedIn
+            <a href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="premium-shine px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2 premium-card-soft">
+              <FaLinkedin className="text-blue-400" /> LinkedIn Profile
             </a>
           </div>
         </motion.div>

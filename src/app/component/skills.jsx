@@ -11,80 +11,114 @@ import {
 
 // Consolidated Fa Imports
 import { 
-  FaNodeJs, FaBolt, FaBroadcastTower, FaCubes, FaNetworkWired, 
+  FaNodeJs, FaBroadcastTower, FaCubes, FaNetworkWired, 
   FaTable, 
 } from "react-icons/fa";
 
 export default function Skills() {
-  const categories = {
-    Frontend: [
-      { name: "HTML5", icon: <SiHtml5 className="w-6 h-6" color="#E34F26" /> },
-      { name: "CSS3", icon: <SiCss className="w-6 h-6" color="#1572B6" /> },
-      { name: "JavaScript", icon: <SiJavascript className="w-6 h-6" color="#F7DF1E" /> },
-      { name: "TypeScript", icon: <SiTypescript className="w-6 h-6" color="#3178C6" /> },
-      { name: "React.js", icon: <SiReact className="w-6 h-6" color="#61DAFB" /> },
-      { name: "Next.js", icon: <SiNextdotjs className="w-6 h-6" color="#FFFFFF" /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss className="w-6 h-6" color="#38BDF8" /> },
-      { name: "shadcn/ui", icon: <FaCubes className="w-6 h-6" color="#A855F7" /> },
-    ],
-    Backend: [
-      { name: "Python", icon: <SiPython className="w-6 h-6" color="#3776AB" /> },
-      { name: "Node.js", icon: <FaNodeJs className="w-6 h-6" color="#339933" /> },
-      { name: "Nest.js", icon: <SiNestjs className="w-6 h-6" color="#D82C20" /> },
-      { name: "Supabase", icon: <SiSupabase className="w-6 h-6" color="#3ECF8E" /> },
-      { name: "Prisma", icon: <SiPrisma className="w-6 h-6" color="#3178c6" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql className="w-6 h-6" color="#4169E1" /> },
-    ],
-    "Realtime / Messaging": [
-      { name: "Socket.io", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
-      { name: "WebSocket", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> },
-      { name: "Redis Pub/Sub", icon: <SiRedis className="w-6 h-6" color="#D82C20" /> },
-      { name: "RabbitMQ", icon: <SiRabbitmq className="w-6 h-6" color="#F05032" /> },
-    ],
-    "Other Tools": [
-      { name: "Git", icon: <SiGit className="w-6 h-6" color="#F05032" /> },
-      { name: "GitHub", icon: <SiGithub className="w-6 h-6" color="#FFFFFF" /> },
-      { name: "Vercel", icon: <SiVercel className="w-6 h-6" color="#FFFFFF" /> },
-      { name: "Docker", icon: <SiDocker className="w-6 h-6" color="#2496ED" /> },
-    ],
-  };
+  const categories = [
+    {
+      title: "Frontend Engineering",
+      subtitle: "Interactive interfaces with strong UI precision.",
+      skills: [
+        { name: "HTML5", level: "Advanced", icon: <SiHtml5 className="w-6 h-6" color="#E34F26" /> },
+        { name: "CSS3", level: "Advanced", icon: <SiCss className="w-6 h-6" color="#1572B6" /> },
+        { name: "JavaScript", level: "Advanced", icon: <SiJavascript className="w-6 h-6" color="#F7DF1E" /> },
+        { name: "TypeScript", level: "Advanced", icon: <SiTypescript className="w-6 h-6" color="#3178C6" /> },
+        { name: "React.js", level: "Advanced", icon: <SiReact className="w-6 h-6" color="#61DAFB" /> },
+        { name: "Next.js", level: "Advanced", icon: <SiNextdotjs className="w-6 h-6" color="#FFFFFF" /> },
+        { name: "Tailwind CSS", level: "Advanced", icon: <SiTailwindcss className="w-6 h-6" color="#38BDF8" /> },
+        { name: "shadcn/ui", level: "Proficient", icon: <FaCubes className="w-6 h-6" color="#A855F7" /> },
+      ],
+    },
+    {
+      title: "Backend Engineering",
+      subtitle: "Reliable APIs, data layers, and scalable services.",
+      skills: [
+        { name: "Python", level: "Advanced", icon: <SiPython className="w-6 h-6" color="#3776AB" /> },
+        { name: "Node.js", level: "Advanced", icon: <FaNodeJs className="w-6 h-6" color="#339933" /> },
+        { name: "Nest.js", level: "Advanced", icon: <SiNestjs className="w-6 h-6" color="#D82C20" /> },
+        { name: "Supabase", level: "Proficient", icon: <SiSupabase className="w-6 h-6" color="#3ECF8E" /> },
+        { name: "Prisma", level: "Advanced", icon: <SiPrisma className="w-6 h-6" color="#3178c6" /> },
+        { name: "PostgreSQL", level: "Advanced", icon: <SiPostgresql className="w-6 h-6" color="#4169E1" /> },
+      ],
+    },
+    {
+      title: "Real-Time & Messaging",
+      subtitle: "Low-latency communication patterns and event-driven systems.",
+      skills: [
+        { name: "Socket.io", level: "Proficient", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
+        { name: "WebSocket", level: "Proficient", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> },
+        { name: "Redis Pub/Sub", level: "Proficient", icon: <SiRedis className="w-6 h-6" color="#D82C20" /> },
+        { name: "RabbitMQ", level: "Proficient", icon: <SiRabbitmq className="w-6 h-6" color="#F05032" /> },
+      ],
+    },
+    {
+      title: "Platform & Tooling",
+      subtitle: "Delivery, infrastructure, and team workflow essentials.",
+      skills: [
+        { name: "Git", level: "Advanced", icon: <SiGit className="w-6 h-6" color="#F05032" /> },
+        { name: "GitHub", level: "Advanced", icon: <SiGithub className="w-6 h-6" color="#FFFFFF" /> },
+        { name: "Vercel", level: "Proficient", icon: <SiVercel className="w-6 h-6" color="#FFFFFF" /> },
+        { name: "Docker", level: "Proficient", icon: <SiDocker className="w-6 h-6" color="#2496ED" /> },
+      ],
+    },
+  ];
 
   // Animation Variants
   const container = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: { staggerChildren: 0.1 }
+      transition: { staggerChildren: 0.08 }
     }
   };
 
   const item = {
-    hidden: { opacity: 0, y: 10 },
-    show: { opacity: 1, y: 0 }
+    hidden: { opacity: 0, y: 14, scale: 0.985 },
+    show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: "easeOut" } }
   };
 
   return (
-    <section id="skills" className="py-12 px-6 bg-[#071026] dark:bg-gray-900">
+    <motion.section
+      id="skills"
+      initial={{ opacity: 0, y: 26 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.65, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.15 }}
+      className="py-12 px-6 bg-[#071026] dark:bg-gray-900"
+    >
       <motion.h2 
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-3xl font-bold mb-10 text-blue-100 text-center"
+        className="text-3xl md:text-4xl font-bold mb-2 text-center premium-gradient-title"
       >
-        🛠 Skills
+        Technical Expertise
       </motion.h2>
+      <p className="text-center text-blue-200/70 max-w-2xl mx-auto mb-10">
+        A curated snapshot of the tools and technologies I use to design, build, and scale modern digital products.
+      </p>
 
-      <div className="space-y-10">
-        {Object.entries(categories).map(([category, skills], i) => (
-          <div key={i}>
+      <div className="space-y-8">
+        {categories.map((category, i) => (
+          <motion.article
+            key={i}
+            initial={{ opacity: 0, y: 22 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: i * 0.04 }}
+            viewport={{ once: true, amount: 0.15 }}
+            className="premium-card-soft rounded-2xl p-5 md:p-7 shadow-[0_24px_70px_rgba(2,8,24,0.6),0_0_26px_rgba(96,165,250,0.2),inset_0_1px_0_rgba(255,255,255,0.08)]"
+          >
             <motion.h3 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-xl font-semibold mb-4 text-blue-200"
+              className="text-xl md:text-2xl font-semibold mb-1 text-blue-100"
             >
-              {category}
+              {category.title}
             </motion.h3>
+            <p className="text-blue-300/70 mb-5 text-sm md:text-base">{category.subtitle}</p>
             <motion.div 
               variants={container}
               initial="hidden"
@@ -92,24 +126,28 @@ export default function Skills() {
               viewport={{ once: true }}
               className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
             >
-              {skills.map((skill, index) => (
+              {category.skills.map((skill, index) => (
                 <motion.div
                   key={index}
                   variants={item}
-                  whileHover={{ scale: 1.05 }}
-                  className="flex items-center gap-2 p-4 text-blue-200 shadow-indigo-100 bg-[#071026] 
-                             dark:bg-gray-800 rounded-lg font-bold shadow-md transform transition 
-                             duration-300 hover:bg-gray-500 dark:hover:bg-gray-700"
+                  whileHover={{ scale: 1.025, y: -4 }}
+                  className="group relative flex flex-col gap-2 p-4 rounded-xl border border-blue-200/15 bg-[#0b1733]/70 text-blue-100 font-semibold transform transition-all duration-300 shadow-[0_14px_34px_rgba(2,8,24,0.48),0_0_10px_rgba(59,130,246,0.15)] hover:shadow-[0_28px_58px_rgba(2,8,24,0.68),0_0_22px_rgba(56,189,248,0.26),0_0_42px_rgba(37,99,235,0.18)] hover:border-blue-300/40 hover:bg-[#0f2148]/80"
                 >
-                  {/* Safety check: if icon is undefined, render a fallback table icon */}
-                  {skill.icon ? skill.icon : <FaTable className="w-6 h-6" />}
-                  <span>{skill.name}</span>
+                  <div className="flex items-center justify-between">
+                    <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shadow-[0_0_0_rgba(56,189,248,0)] group-hover:scale-105 group-hover:shadow-[0_0_16px_rgba(56,189,248,0.32)] transition-all">
+                      {skill.icon ? skill.icon : <FaTable className="w-6 h-6" />}
+                    </div>
+                    <span className="text-[11px] uppercase tracking-wider px-2 py-1 rounded-full bg-blue-400/10 text-blue-300 border border-blue-300/20">
+                      {skill.level}
+                    </span>
+                  </div>
+                  <span className="text-sm md:text-base leading-tight">{skill.name}</span>
                 </motion.div>
               ))}
             </motion.div>
-          </div>
+          </motion.article>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
