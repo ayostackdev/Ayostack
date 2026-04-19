@@ -47,12 +47,12 @@ export default function HeroSection() {
               products that perform at scale
             </span>{" "}
           </h1>
-          <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu, Product Engineer focused on performance, reliability, and measurable impact.</p>
+          <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu, Product Engineer building reliable, high-performance products.</p>
   <div className="space-y-6">
   <p className="text-blue-100/70 text-base md:text-lg max-w-2xl leading-relaxed">
     {/* The Vision: Where Science meets Architecture */}
     <span className="block mb-4">
-      I build dashboards, platforms, and web products that convert data into clear decisions and practical business outcomes.
+      I build dashboards and platforms that turn data into clear, practical decisions.
     </span>
 
     {/* The Stack: The "Engine" */}
@@ -61,7 +61,7 @@ export default function HeroSection() {
       <span className="font-mono text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded"> 
         Next.js • NestJS • PostgreSQL 
       </span> 
-      with a strong focus on scalability, product quality, and execution speed.
+      focused on scalability and execution speed.
     </span>
 
     {/* The Current Mission: SunFi */}
@@ -70,7 +70,7 @@ export default function HeroSection() {
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
       </span>
-      Currently supporting operational efficiency initiatives at SunFi as a Product-Minded Data and BI Intern
+      Supporting operational efficiency initiatives at SunFi as a Data and BI Intern
     </span>
   </p>
 </div>

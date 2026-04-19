@@ -131,17 +131,14 @@ export default function Skills() {
                   key={index}
                   variants={item}
                   whileHover={{ scale: 1.025, y: -4 }}
-                  className="group relative flex flex-col gap-2 p-4 rounded-xl border border-blue-200/15 bg-[#0b1733]/70 text-blue-100 font-semibold transform transition-all duration-300 shadow-[0_16px_38px_rgba(2,8,24,0.52),0_0_14px_rgba(59,130,246,0.2),0_0_10px_rgba(255,255,255,0.08),inset_0_1px_0_rgba(255,255,255,0.06)] hover:shadow-[0_32px_66px_rgba(2,8,24,0.72),0_0_28px_rgba(56,189,248,0.3),0_0_20px_rgba(255,255,255,0.14),0_0_52px_rgba(37,99,235,0.22)] hover:border-blue-300/45 hover:bg-[#0f2148]/85"
+                  className="group relative flex flex-col gap-1.5 p-3 rounded-xl border border-blue-200/15 bg-[#0b1733]/70 text-blue-100 font-semibold transform transition-all duration-300 shadow-[0_22px_52px_rgba(2,8,24,0.62),0_0_18px_rgba(59,130,246,0.26),0_0_14px_rgba(255,255,255,0.1),inset_0_1px_0_rgba(255,255,255,0.08)] hover:shadow-[0_40px_84px_rgba(2,8,24,0.82),0_0_38px_rgba(56,189,248,0.4),0_0_28px_rgba(255,255,255,0.18),0_0_72px_rgba(37,99,235,0.3)] hover:border-blue-300/45 hover:bg-[#0f2148]/85"
                 >
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center">
                     <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shadow-[0_8px_16px_rgba(2,8,24,0.45),0_0_6px_rgba(255,255,255,0.08),0_0_0_rgba(56,189,248,0)] group-hover:scale-105 group-hover:shadow-[0_12px_24px_rgba(2,8,24,0.62),0_0_10px_rgba(255,255,255,0.16),0_0_20px_rgba(56,189,248,0.38)] transition-all">
                       {skill.icon ? skill.icon : <FaTable className="w-6 h-6" />}
                     </div>
-                    <span className="text-[11px] uppercase tracking-wider px-2 py-1 rounded-full bg-blue-400/10 text-blue-300 border border-blue-300/20">
-                      {skill.level}
-                    </span>
                   </div>
-                  <span className="text-sm md:text-base leading-tight">{skill.name}</span>
+                  <span className="text-sm md:text-base leading-tight mt-0.5">{skill.name}</span>
                 </motion.div>
               ))}
             </motion.div>
