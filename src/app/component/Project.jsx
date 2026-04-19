@@ -9,11 +9,6 @@ export default function Projects() {
       desc: "A digital platform that keeps campus members connected through events, updates, and announcements.", 
       link: "https://cssf-funaab.vercel.app/" 
     },
- { 
-      title: "Pizza Ordering Experience", 
-      desc: "A modern ordering interface with interactive flows and real-time customization.", 
-      link: "https://pizza-heaven-five.vercel.app/" 
-    },
   ];
 
   const cardVariants = {
