@@ -9,7 +9,7 @@ import {
   SiPostgresql,
   SiPrisma,
   SiSupabase,
-  SiPython,
+  SiTypescript,
 } from "react-icons/si";
 import styles from './GlowingBorder.module.css'; // Reuse your spinning border!
 
@@ -21,7 +21,7 @@ export default function HeroSection() {
     { name: "Prisma", icon: SiPrisma, hoverClass: "hover:text-sky-100" },
     { name: "Supabase", icon: SiSupabase, hoverClass: "hover:text-emerald-400" },
     { name: "Tailwind CSS", icon: SiTailwindcss, hoverClass: "hover:text-cyan-300" },
-    { name: "Python", icon: SiPython, hoverClass: "hover:text-yellow-300" },
+    { name: "TypeScript", icon: SiTypescript, hoverClass: "hover:text-sky-300" },
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function HeroSection() {
   <p className="text-blue-100/70 text-base md:text-lg max-w-2xl leading-relaxed">
     {/* The Vision: Where Science meets Architecture */}
     <span className="block mb-4">
-      I build dashboards and platforms that turn data into clear, practical decisions.
+      I build web applications and platforms that turn ideas into clear, practical products.
     </span>
 
     {/* The Stack: The "Engine" */}
