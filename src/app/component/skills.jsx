@@ -43,6 +43,7 @@ export default function Skills() {
         { name: "PostgreSQL", level: "Advanced", icon: <SiPostgresql className="w-6 h-6" color="#4169E1" /> },
       ],
     },
+    /*
     {
       title: "Real-Time & Messaging",
       subtitle: "Low-latency communication patterns and event-driven systems.",
@@ -53,6 +54,7 @@ export default function Skills() {
         { name: "RabbitMQ", level: "Proficient", icon: <SiRabbitmq className="w-6 h-6" color="#F05032" /> },
       ],
     },
+    */
     {
       title: "Platform & Tooling",
       subtitle: "Delivery, infrastructure, and team workflow essentials.",
