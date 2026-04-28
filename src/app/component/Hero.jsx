@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion"; // Add Framer Motion
-import { FaArrowRight, FaLinkedin } from "react-icons/fa";
+import { FaArrowRight, FaLinkedin, FaNetworkWired } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -16,7 +16,7 @@ import styles from './GlowingBorder.module.css'; // Reuse your spinning border!
 export default function HeroSection() {
   const techStack = [
     { name: "Next.js", icon: SiNextdotjs, hoverClass: "hover:text-white" },
-    { name: "NestJS", icon: SiNestjs, hoverClass: "hover:text-rose-400" },
+    { name: "REST API", icon: FaNetworkWired, hoverClass: "hover:text-blue-300" },
     { name: "PostgreSQL", icon: SiPostgresql, hoverClass: "hover:text-blue-300" },
     { name: "Prisma", icon: SiPrisma, hoverClass: "hover:text-sky-100" },
     { name: "Supabase", icon: SiSupabase, hoverClass: "hover:text-emerald-400" },

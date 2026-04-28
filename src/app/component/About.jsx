@@ -6,6 +6,7 @@ import {
   SiNextdotjs, SiTailwindcss, SiNestjs, 
   SiPostgresql, SiPrisma, SiSupabase, SiPython
 } from "react-icons/si";
+import { FaNetworkWired } from "react-icons/fa";
 
 export default function AboutMe() {
   const itemVariants = {
@@ -64,7 +65,7 @@ export default function AboutMe() {
         <motion.div variants={itemVariants} className="pt-4">
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-blue-400/50">
             <SiNextdotjs size={26} title="Next.js" className="hover:text-white transition-colors" />
-            <SiNestjs size={26} title="NestJS" className="hover:text-red-500 transition-colors" />
+       <FaNetworkWired className="w-6 h-6" color="#60A5FA" />
             <SiPostgresql size={26} title="PostgreSQL" className="hover:text-blue-300 transition-colors" />
             <SiPrisma size={26} title="Prisma" className="hover:text-white transition-colors" />
             <SiSupabase size={26} title="Supabase" className="hover:text-emerald-400 transition-colors" />
