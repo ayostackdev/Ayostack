@@ -37,24 +37,29 @@ export default function Skills() {
       skills: [
         { name: "Python", level: "Advanced", icon: <SiPython className="w-6 h-6" color="#3776AB" /> },
         { name: "Node.js", level: "Advanced", icon: <FaNodeJs className="w-6 h-6" color="#339933" /> },
-        { name: "Nest.js", level: "Advanced", icon: <SiNestjs className="w-6 h-6" color="#D82C20" /> },
+        { name: "REST API", level: "Advanced", icon: <FaNetworkWired className="w-6 h-6" color="#60A5FA" /> },
         { name: "Supabase", level: "Proficient", icon: <SiSupabase className="w-6 h-6" color="#3ECF8E" /> },
         { name: "Prisma", level: "Advanced", icon: <SiPrisma className="w-6 h-6" color="#3178c6" /> },
         { name: "PostgreSQL", level: "Advanced", icon: <SiPostgresql className="w-6 h-6" color="#4169E1" /> },
+        
       ],
     },
-    /*
+    
     {
       title: "Real-Time & Messaging",
       subtitle: "Low-latency communication patterns and event-driven systems.",
       skills: [
         { name: "Socket.io", level: "Proficient", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
         { name: "WebSocket", level: "Proficient", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> },
+       
+        /*
         { name: "Redis Pub/Sub", level: "Proficient", icon: <SiRedis className="w-6 h-6" color="#D82C20" /> },
         { name: "RabbitMQ", level: "Proficient", icon: <SiRabbitmq className="w-6 h-6" color="#F05032" /> },
+        */
+
       ],
     },
-    */
+    
     {
       title: "Platform & Tooling",
       subtitle: "Delivery, infrastructure, and team workflow essentials.",
