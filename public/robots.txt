@@ -1,0 +1,19 @@
+# Allow all bots to crawl this site
+User-agent: *
+Allow: /
+Allow: /public/
+
+# Disallow private paths (if any)
+Disallow: /api/private/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.ayostack.dev/sitemap.xml
+
+# Crawl delay settings
+Crawl-delay: 1
+
+# Important - let Google index everything
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0

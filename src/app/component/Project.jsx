@@ -6,9 +6,18 @@ export default function Projects() {
   const projects = [
     { 
       title: "Fellowship Web Platform", 
-      desc: "A digital platform that keeps campus members connected through events, updates, and announcements.", 
+      desc: "A full-stack community platform built with Next.js and PostgreSQL that connects campus members through real-time event updates, announcements, and member management. Features responsive design and optimized performance.", 
+      tech: ["Next.js", "PostgreSQL", "Tailwind CSS","Supabase","Shadcnui"],
       link: "https://cssf-funaab.vercel.app/" 
     },
+    /*
+    { 
+      title: "Real-Time Chat Application", 
+      desc: "WebSocket-powered real-time communication platform built with Nest.js backend and React frontend. Implements message encryption, user authentication, and data persistence with PostgreSQL.", 
+      tech: ["Nest.js", "React", "WebSocket", "PostgreSQL"],
+      link: "#" 
+    },
+    */
   ];
 
   const cardVariants = {
@@ -65,9 +74,18 @@ export default function Projects() {
                    <h3 className="text-white font-bold text-2xl tracking-tight">{project.title}</h3>
                 </div>
                 
-                <p className="text-blue-100/80 text-sm leading-relaxed mb-8 flex-grow">
+                <p className="text-blue-100/80 text-sm leading-relaxed mb-4 flex-grow">
                   {project.desc}
                 </p>
+
+                {/* Tech Stack Tags */}
+                <div className="flex flex-wrap gap-2 justify-center mb-6">
+                  {project.tech.map((tech) => (
+                    <span key={tech} className="text-xs bg-blue-500/20 text-blue-300 px-2 py-1 rounded-full">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
                 
                 <a 
                   href={project.link} 
@@ -75,7 +93,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="premium-shine premium-button w-full py-3.5 bg-white/10 hover:bg-blue-600 border border-white/20 hover:border-blue-400 text-white font-semibold rounded-full transition-all duration-300 flex justify-center items-center gap-2 group backdrop-blur-sm"
                 >
-                  View Live Project
+                  View Project
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </div>

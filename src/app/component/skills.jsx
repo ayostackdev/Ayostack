@@ -19,7 +19,7 @@ export default function Skills() {
   const categories = [
     {
       title: "Frontend Engineering",
-      subtitle: "Interactive interfaces with strong UI precision.",
+      subtitle: "Building responsive, performant user interfaces with modern React and Next.js frameworks.",
       skills: [
         { name: "HTML5", level: "Advanced", icon: <SiHtml5 className="w-6 h-6" color="#E34F26" /> },
         { name: "CSS3", level: "Advanced", icon: <SiCss className="w-6 h-6" color="#1572B6" /> },
@@ -33,11 +33,11 @@ export default function Skills() {
     },
     {
       title: "Backend Engineering",
-      subtitle: "Reliable APIs, data layers, and scalable services.",
+      subtitle: "Developing scalable REST APIs, microservices, and data layers with Node.js and Nest.js.",
       skills: [
         { name: "Python", level: "Advanced", icon: <SiPython className="w-6 h-6" color="#3776AB" /> },
         { name: "Node.js", level: "Advanced", icon: <FaNodeJs className="w-6 h-6" color="#339933" /> },
-        { name: "REST API", level: "Advanced", icon: <FaNetworkWired className="w-6 h-6" color="#60A5FA" /> },
+        { name: "Nest.js", level: "Advanced", icon: <SiNestjs className="w-6 h-6" color="#E0234E" /> },
         { name: "Supabase", level: "Proficient", icon: <SiSupabase className="w-6 h-6" color="#3ECF8E" /> },
         { name: "Prisma", level: "Advanced", icon: <SiPrisma className="w-6 h-6" color="#3178c6" /> },
         { name: "PostgreSQL", level: "Advanced", icon: <SiPostgresql className="w-6 h-6" color="#4169E1" /> },
@@ -47,7 +47,7 @@ export default function Skills() {
     
     {
       title: "Real-Time & Messaging",
-      subtitle: "Low-latency communication patterns and event-driven systems.",
+      subtitle: "Building low-latency communication systems, WebSocket integration, and event-driven architectures.",
       skills: [
         { name: "Socket.io", level: "Proficient", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
         { name: "WebSocket", level: "Proficient", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> },
@@ -62,7 +62,7 @@ export default function Skills() {
     
     {
       title: "Platform & Tooling",
-      subtitle: "Delivery, infrastructure, and team workflow essentials.",
+      subtitle: "DevOps, CI/CD pipelines, version control, containerization, and cloud deployment infrastructure.",
       skills: [
         { name: "Git", level: "Advanced", icon: <SiGit className="w-6 h-6" color="#F05032" /> },
         { name: "GitHub", level: "Advanced", icon: <SiGithub className="w-6 h-6" color="#FFFFFF" /> },

@@ -16,7 +16,7 @@ import styles from './GlowingBorder.module.css'; // Reuse your spinning border!
 export default function HeroSection() {
   const techStack = [
     { name: "Next.js", icon: SiNextdotjs, hoverClass: "hover:text-white" },
-    { name: "REST API", icon: FaNetworkWired, hoverClass: "hover:text-blue-300" },
+    { name: "Nest.js", icon: SiNestjs, hoverClass: "hover:text-pink-300" },
     { name: "PostgreSQL", icon: SiPostgresql, hoverClass: "hover:text-blue-300" },
     { name: "Prisma", icon: SiPrisma, hoverClass: "hover:text-sky-100" },
     { name: "Supabase", icon: SiSupabase, hoverClass: "hover:text-emerald-400" },
@@ -42,35 +42,26 @@ export default function HeroSection() {
           <p className="inline-flex premium-card-soft px-4 py-2 rounded-full text-blue-300 font-mono tracking-[0.18em] text-[11px] uppercase">Open to High-Impact 2026 Opportunities</p>
           
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow-[0_14px_30px_rgba(2,8,20,0.5)]">
-            Engineering{" "}
+            Building Scalable{" "}
             <span className="bg-gradient-to-r from-blue-400 via-teal-200 to-green-300 bg-clip-text text-transparent">
-              products that perform at scale
+              Full-Stack Web Applications
             </span>{" "}
           </h1>
-          <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu, Product Engineer building reliable, high-performance products.</p>
+          <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu | Full-Stack Developer in Nigeria specializing in Next.js, Nest.js, and PostgreSQL.</p>
   <div className="space-y-6">
   <p className="text-blue-100/70 text-base md:text-lg max-w-2xl leading-relaxed">
-    {/* The Vision: Where Science meets Architecture */}
+    {/* The Vision */}
     <span className="block mb-4">
-      I build web applications and platforms that turn ideas into clear, practical products.
+      I build scalable web applications, REST APIs, and data platforms that help businesses scale efficiently. With expertise in modern full-stack JavaScript, I turn complex requirements into high-performance, maintainable solutions.
     </span>
 
-    {/* The Stack: The "Engine" */}
-    <span className="block mb-6">
-      Core stack:
-      <span className="font-mono text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded"> 
-        Next.js • NestJS • PostgreSQL 
-      </span> 
-      focused on scalability and execution speed.
-    </span>
-
-    {/* The Current Mission: SunFi */}
+    {/* The Current Status */}
     <span className="flex items-center gap-3 text-white/90 italic font-medium border-l-4 border-blue-500 pl-4 bg-blue-500/5 py-3 rounded-r-lg">
       <span className="relative flex h-3 w-3">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
       </span>
-      Supporting operational efficiency initiatives at SunFi as a Data and BI Intern
+      Available for freelance projects, contract work, and full-time opportunities
     </span>
   </p>
 </div>
