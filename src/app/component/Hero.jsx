@@ -47,12 +47,12 @@ export default function HeroSection() {
               Full-Stack Web Applications
             </span>{" "}
           </h1>
-          <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu | Full-Stack Developer in Nigeria specializing in Next.js, Nest.js, and PostgreSQL.</p>
+          <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu | Full-Stack Software Developer in Nigeria specializing in Next.js, Nest.js, and PostgreSQL.</p>
   <div className="space-y-6">
   <p className="text-blue-100/70 text-base md:text-lg max-w-2xl leading-relaxed">
     {/* The Vision */}
     <span className="block mb-4">
-      I build scalable web applications, REST APIs, and data platforms that help businesses scale efficiently. With expertise in modern full-stack JavaScript, I turn complex requirements into high-performance, maintainable solutions.
+      I build scalable web applications, REST APIs, and data platforms that help businesses scale efficiently. With expertise in modern full-stack JavaScript & Typescript, I turn complex requirements into high-performance, maintainable solutions.
     </span>
 
     {/* The Current Status */}
