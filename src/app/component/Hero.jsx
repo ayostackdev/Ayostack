@@ -47,7 +47,7 @@ export default function HeroSection() {
               Full-Stack Web Applications
             </span>{" "}
           </h1>
-          <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu | Full-Stack Software Developer in Nigeria specializing in Next.js, Nest.js, and PostgreSQL.</p>
+            <p className="text-base md:text-xl font-semibold text-blue-100/90">Ayokunle Shittu | Full-Stack Software Engineer in Nigeria specializing in Next.js, Nest.js, and PostgreSQL.</p>
   <div className="space-y-6">
   <p className="text-blue-100/70 text-base md:text-lg max-w-2xl leading-relaxed">
     {/* The Vision */}

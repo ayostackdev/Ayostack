@@ -29,12 +29,12 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "Full-Stack Software Developer Nigeria | Next.js, Nest.js, PostgreSQL | Ayokunle Shittu",
+      "Full-Stack Software Engineer Nigeria | Next.js, Nest.js, PostgreSQL | Ayokunle Shittu",
     template: "%s | Ayostack",
   },
 
   description:
-    "Ayokunle Shittu - Full-Stack Software Developer & Product Engineer in Nigeria. Expert in building scalable Next.js applications, Nest.js REST APIs, PostgreSQL databases, and real-time systems. Specialized in frontend (React, TypeScript), backend (Node.js, Nest.js), and data-driven solutions.",
+    "Ayokunle Shittu - Full-Stack Software Engineer & Product Engineer in Nigeria. Expert in building scalable Next.js applications, Nest.js REST APIs, PostgreSQL databases, and real-time systems. Specialized in frontend (React, TypeScript), backend (Node.js, Nest.js), and data-driven solutions.",
 
   keywords: [
     "Full Stack Developer Nigeria",
