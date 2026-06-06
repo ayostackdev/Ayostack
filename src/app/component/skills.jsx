@@ -73,6 +73,37 @@ export default function Skills() {
     },
   ];
 
+  const certifications = [
+    {
+      title: "Cloud Infrastructure & Virtualization",
+      items: [
+        { name: "Ubuntu Linux Professional", issuer: "Canonical" },
+        { name: "Docker Foundations", issuer: "Docker, Inc." },
+      ],
+    },
+    {
+      title: "Distributed Architecture & Communications",
+      items: [
+        { name: "Microservices Foundations", issuer: "Kong" },
+        { name: "Programmable Messaging & Voice", issuer: "Twilio" },
+      ],
+    },
+    {
+      title: "Data Engineering & Algorithmic Intelligence",
+      items: [
+        { name: "Data Engineering Foundations", issuer: "Astronomer" },
+        { name: "Machine Learning with Python", issuer: "Anaconda" },
+      ],
+    },
+    {
+      title: "Enterprise AI & Governance Systems",
+      items: [
+        { name: "Azure AI Essentials", issuer: "Microsoft" },
+        { name: "Security Essentials", issuer: "Microsoft & LinkedIn" },
+      ],
+    },
+  ];
+
   // Animation Variants
   const container = {
     hidden: { opacity: 0 },
@@ -153,6 +184,48 @@ export default function Skills() {
           </motion.article>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 22 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.55, delay: 0.15 }}
+        viewport={{ once: true, amount: 0.15 }}
+        className="mt-12"
+      >
+        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-center premium-gradient-title">
+          Professional Certifications
+        </h2>
+        <p className="text-center text-blue-200/70 max-w-2xl mx-auto mb-8 text-sm md:text-base">
+          Certifications that reflect my focus across infrastructure, distributed systems, data, and applied AI.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {certifications.map((certification, index) => (
+            <motion.article
+              key={index}
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+              viewport={{ once: true, amount: 0.15 }}
+              className="premium-card-soft rounded-2xl p-6 shadow-[0_24px_70px_rgba(2,8,24,0.6),0_0_26px_rgba(96,165,250,0.2),inset_0_1px_0_rgba(255,255,255,0.08)]"
+            >
+              <h3 className="text-lg md:text-xl font-semibold text-blue-100 mb-4">
+                {certification.title}
+              </h3>
+              <ul className="space-y-3 text-blue-200/80 text-sm md:text-base">
+                {certification.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="flex items-start gap-3">
+                    <span className="mt-1 inline-block h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_12px_rgba(103,232,249,0.75)]" />
+                    <span>
+                      {item.name} <span className="text-blue-300">({item.issuer})</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </motion.article>
+          ))}
+        </div>
+      </motion.div>
     </motion.section>
   );
 }
