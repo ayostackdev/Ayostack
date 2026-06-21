@@ -95,13 +95,6 @@ export default function Skills() {
         { name: "Machine Learning with Python", issuer: "Anaconda" },
       ],
     },
-    {
-      title: "Enterprise AI & Governance Systems",
-      items: [
-        { name: "Azure AI Essentials", issuer: "Microsoft" },
-        { name: "Security Essentials", issuer: "Microsoft & LinkedIn" },
-      ],
-    },
   ];
 
   // Animation Variants
