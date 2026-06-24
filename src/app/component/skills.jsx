@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 // Consolidated Si Imports
 import { 
-  SiHtml5, SiCss, SiJavascript, SiReact, SiPython, SiGnubash,
+  SiHtml5, SiCss, SiJavascript, SiReact, SiFastapi, SiGnubash,
   SiTypescript, SiNextdotjs, SiTailwindcss, 
   SiGit, SiGithub, SiPostgresql, SiDocker, SiVercel, SiRedis, 
   SiLinux,
@@ -36,7 +36,7 @@ export default function Skills() {
       title: "Backend Engineering",
       subtitle: "Developing scalable REST APIs, microservices, and data layers with Node.js and Nest.js.",
       skills: [
-        { name: "Python", level: "Advanced", icon: <SiPython className="w-6 h-6" color="#3776AB" /> },
+        { name: "FastAPI", level: "Proficient", icon: <SiFastapi className="w-6 h-6" color="#009688" /> },
         { name: "Node.js", level: "Advanced", icon: <FaNodeJs className="w-6 h-6" color="#339933" /> },
         { name: "Nest.js", level: "Advanced", icon: <SiNestjs className="w-6 h-6" color="#E0234E" /> },
         { name: "Supabase", level: "Proficient", icon: <SiSupabase className="w-6 h-6" color="#3ECF8E" /> },

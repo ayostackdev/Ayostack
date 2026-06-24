@@ -110,7 +110,7 @@ export default function HeroSection() {
             
             <div className="relative w-64 h-66 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-[#071026] z-10">
               <Image
-                src="/toffee-8789.JPG"
+                src="/toffee-3514~2.jpg"
                 alt="Ayokunle Shittu"
                 fill
                 priority
