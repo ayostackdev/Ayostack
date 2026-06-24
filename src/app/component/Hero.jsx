@@ -41,6 +41,10 @@ export default function HeroSection() {
         >
           <p className="inline-flex premium-card-soft px-4 py-2 rounded-full text-blue-300 font-mono tracking-[0.18em] text-[11px] uppercase">Open to High-Impact 2026 Opportunities</p>
           
+          <p className="text-lg sm:text-xl text-blue-200/80 font-medium">
+            Hi, I&apos;m <span className="text-white font-semibold">Ayokunle Shittu</span>
+          </p>
+          
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow-[0_14px_30px_rgba(2,8,20,0.5)]">
             Building Scalable{" "}
             <span className="bg-gradient-to-r from-blue-400 via-teal-200 to-green-300 bg-clip-text text-transparent">
