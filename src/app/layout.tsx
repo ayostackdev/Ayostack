@@ -17,10 +17,11 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  // 1. This serves as the prefix foundation for all relative paths below
   metadataBase: new URL("https://www.ayostack.dev"),
 
   alternates: {
-    canonical: "https://www.ayostack.dev",
+    canonical: "/",
   },
 
   verification: {
@@ -68,11 +69,11 @@ export const metadata: Metadata = {
     title: "Full-Stack Developer Nigeria | Ayokunle Shittu | Next.js & Nest.js Expert",
     description:
       "Expert Full-Stack Developer specializing in Next.js, Nest.js, PostgreSQL, and scalable web applications. Building high-performance products for startups and enterprises across Africa.",
-    url: "https://www.ayostack.dev",
+    url: "/",
     siteName: "Ayostack",
     images: [
       {
-        url: "https://www.ayostack.dev/preview.png",
+        url: "/preview.png", // Changed to a relative path so Next.js resolves it perfectly
         width: 1200,
         height: 630,
         alt: "Ayokunle Shittu - Full-Stack Developer Portfolio - Next.js, Nest.js, PostgreSQL",
@@ -87,7 +88,7 @@ export const metadata: Metadata = {
     title: "Full-Stack Developer Nigeria | Next.js, Nest.js, PostgreSQL",
     description:
       "Ayokunle Shittu - Expert Full-Stack Developer building scalable Next.js apps, Nest.js APIs, and PostgreSQL databases. Available for freelance & full-time roles.",
-    images: ["https://www.ayostack.dev/preview.png"],
+    images: ["/preview.png"], // Changed to a relative path
     creator: "@ayostack",
     site: "@ayostack",
   },

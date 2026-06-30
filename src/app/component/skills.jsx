@@ -52,7 +52,8 @@ export default function Skills() {
       skills: [
         { name: "Socket.io", level: "Proficient", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
         { name: "WebSocket", level: "Proficient", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> },
-       
+        { name: "Redis Pub/Sub", level: "Proficient", icon: <SiRedis className="w-6 h-6" color="#DC382D" /> },
+        { name: "RabbitMQ", level: "Proficient", icon: <SiRabbitmq className="w-6 h-6" color="#FF6600" /> },
 
       ],
     },
