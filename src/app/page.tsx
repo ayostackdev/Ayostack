@@ -1,16 +1,19 @@
 import Header from "./component/header";
 import HeroSection from "./component/Hero";
-import Footer  from './component/Footer'
+import Experience from "./component/Experience";
+import Projects from "./component/Project";
 import Skills from "./component/skills";
-import Project from './component/Project'
+import Footer from "./component/Footer";
+
 export default function Home() {
   return (
     <div className="premium-shell">
-   <Header/>
-  <HeroSection/>
-  <Project/>
-    <Skills/>
-  <Footer/>
+      <Header />
+      <HeroSection />
+      <Experience />
+      <Projects />
+      <Skills />
+      <Footer />
     </div>
   );
 }

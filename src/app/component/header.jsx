@@ -23,14 +23,14 @@ export default function Header() {
           <Link href="#hero" className="premium-nav-link text-blue-100 hover:text-white transition">
             Home
           </Link>
+          <Link href="#experience" className="premium-nav-link text-blue-100 hover:text-white transition">
+            Experience
+          </Link>
           <Link href="#projects" className="premium-nav-link text-blue-100 hover:text-white transition">
             Projects
           </Link>
           <Link href="#skills" className="premium-nav-link text-blue-100 hover:text-white transition">
             Skills
-          </Link>
-          <Link href="#contacts" className="premium-nav-link text-blue-100 hover:text-white transition">
-            Contact
           </Link>
         </nav>
 
@@ -51,14 +51,14 @@ export default function Header() {
           <Link href="#hero" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
             Home
           </Link>
+          <Link href="#experience" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
+            Experience
+          </Link>
           <Link href="#projects" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
             Projects
           </Link>
           <Link href="#skills" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
             Skills
-          </Link>
-          <Link href="#contacts" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
-            Contact
           </Link>
         </nav>
       )}

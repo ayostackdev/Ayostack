@@ -3,16 +3,15 @@
 import { motion } from "framer-motion";
 // Consolidated Si Imports
 import { 
-  SiHtml5, SiCss, SiJavascript, SiReact, SiFastapi, SiGnubash,
+  SiFastapi,
   SiTypescript, SiNextdotjs, SiTailwindcss, 
   SiGit, SiGithub, SiPostgresql, SiDocker, SiVercel, SiRedis, 
-  SiLinux,
-  SiRabbitmq, SiPrisma, SiNestjs, SiSupabase 
+  SiCelery, SiPrisma, SiNestjs, SiSupabase
 } from "react-icons/si";
 
 // Consolidated Fa Imports
 import { 
-  FaNodeJs, FaBroadcastTower, FaCubes, FaNetworkWired,
+  FaNodeJs, FaCubes,
   FaTable, 
 } from "react-icons/fa";
 
@@ -20,13 +19,9 @@ export default function Skills() {
   const categories = [
     {
       title: "Frontend Engineering",
-      subtitle: "Building responsive, performant user interfaces with modern React and Next.js frameworks.",
+      subtitle: "Building responsive, performant user interfaces with Next.js and modern CSS.",
       skills: [
-        { name: "HTML5", level: "Advanced", icon: <SiHtml5 className="w-6 h-6" color="#E34F26" /> },
-        { name: "CSS3", level: "Advanced", icon: <SiCss className="w-6 h-6" color="#1572B6" /> },
-        { name: "JavaScript", level: "Advanced", icon: <SiJavascript className="w-6 h-6" color="#F7DF1E" /> },
         { name: "TypeScript", level: "Advanced", icon: <SiTypescript className="w-6 h-6" color="#3178C6" /> },
-        { name: "React.js", level: "Advanced", icon: <SiReact className="w-6 h-6" color="#61DAFB" /> },
         { name: "Next.js", level: "Advanced", icon: <SiNextdotjs className="w-6 h-6" color="#FFFFFF" /> },
         { name: "Tailwind CSS", level: "Advanced", icon: <SiTailwindcss className="w-6 h-6" color="#38BDF8" /> },
         { name: "shadcn/ui", level: "Proficient", icon: <FaCubes className="w-6 h-6" color="#A855F7" /> },
@@ -48,13 +43,10 @@ export default function Skills() {
     
     {
       title: "Real-Time & Messaging",
-      subtitle: "Building low-latency communication systems, WebSocket integration, and event-driven architectures.",
+      subtitle: "Event-driven architectures, caching strategies, and background task processing.",
       skills: [
-        { name: "Socket.io", level: "Proficient", icon: <FaBroadcastTower className="w-6 h-6" color="#DF0000" /> },
-        { name: "WebSocket", level: "Proficient", icon: <FaNetworkWired className="w-6 h-6" color="#22C55E" /> },
-        { name: "Redis Pub/Sub", level: "Proficient", icon: <SiRedis className="w-6 h-6" color="#DC382D" /> },
-        { name: "RabbitMQ", level: "Proficient", icon: <SiRabbitmq className="w-6 h-6" color="#FF6600" /> },
-
+        { name: "Redis", level: "Proficient", icon: <SiRedis className="w-6 h-6" color="#DC382D" /> },
+        { name: "Celery", level: "Proficient", icon: <SiCelery className="w-6 h-6" color="#A3C644" /> },
       ],
     },
     
@@ -64,8 +56,6 @@ export default function Skills() {
       skills: [
         { name: "Git", level: "Advanced", icon: <SiGit className="w-6 h-6" color="#F05032" /> },
         { name: "GitHub", level: "Advanced", icon: <SiGithub className="w-6 h-6" color="#FFFFFF" /> },
-        { name: "Linux", level: "Proficient", icon: <SiLinux className="w-6 h-6" color="#FCC624" /> },
-        { name: "GNU Bash", level: "Proficient", icon: <SiGnubash className="w-6 h-6" color="#4EAA25" /> },
         { name: "Vercel", level: "Proficient", icon: <SiVercel className="w-6 h-6" color="#FFFFFF" /> },
         { name: "Docker", level: "Proficient", icon: <SiDocker className="w-6 h-6" color="#2496ED" /> },
       ],
