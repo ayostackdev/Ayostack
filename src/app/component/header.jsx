@@ -19,17 +19,17 @@ export default function Header() {
   priority /> 
         <h1 className="text-2xl font-extrabold tracking-[0.08em] premium-gradient-title">Ayostack</h1>
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-4">
-          <Link href="#hero" className="premium-nav-link text-blue-100 hover:text-white transition">
+        <nav className="hidden md:flex items-center gap-2">
+          <Link href="#hero" className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Home
           </Link>
-          <Link href="#experience" className="premium-nav-link text-blue-100 hover:text-white transition">
+          <Link href="#experience" className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Experience
           </Link>
-          <Link href="#projects" className="premium-nav-link text-blue-100 hover:text-white transition">
+          <Link href="#projects" className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Projects
           </Link>
-          <Link href="#skills" className="premium-nav-link text-blue-100 hover:text-white transition">
+          <Link href="#skills" className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Skills
           </Link>
         </nav>
@@ -47,17 +47,17 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <nav className="flex flex-col md:hidden bg-[#071026]/90 backdrop-blur-xl border border-white/10 rounded-2xl absolute top-16 right-3 p-4 w-[200px] z-10 gap-4 shadow-2xl">
-          <Link href="#hero" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
+        <nav className="flex flex-col md:hidden bg-[#071026]/90 backdrop-blur-xl border border-white/10 rounded-2xl absolute top-16 right-3 p-3 w-[180px] z-10 gap-2 shadow-2xl">
+          <Link href="#hero" onClick={() => setIsOpen(false)} className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Home
           </Link>
-          <Link href="#experience" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
+          <Link href="#experience" onClick={() => setIsOpen(false)} className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Experience
           </Link>
-          <Link href="#projects" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
+          <Link href="#projects" onClick={() => setIsOpen(false)} className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Projects
           </Link>
-          <Link href="#skills" onClick={() => setIsOpen(false)} className="premium-nav-link text-blue-100 hover:text-white transition">
+          <Link href="#skills" onClick={() => setIsOpen(false)} className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Skills
           </Link>
         </nav>
