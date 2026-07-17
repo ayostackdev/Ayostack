@@ -55,7 +55,7 @@ export default function HeroSection() {
   <p className="text-blue-100/70 text-base md:text-lg max-w-2xl leading-relaxed">
     {/* The Vision */}
     <span className="block mb-4">
-      I build scalable web applications, REST APIs, and data platforms that help businesses scale efficiently. With expertise in modern full-stack JavaScript & Typescript, I turn complex requirements into high-performance, maintainable solutions.
+      I build full-stack products from the ground up — architecting backend systems with FastAPI, Node.js, Nest.js, and PostgreSQL, then shipping polished frontends with Next.js and TypeScript. From real-time platforms to data pipelines, I turn complex problems into clean, scalable solutions.
     </span>
 
     {/* The Current Status */}
@@ -89,10 +89,7 @@ export default function HeroSection() {
           </div>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-            <a href="#projects" className="premium-button premium-shine px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center gap-2 transition-all hover:scale-105">
-              View Featured Projects <FaArrowRight />
-            </a>
-            <a href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="premium-shine px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2 premium-card-soft">
+            <a href="https://www.linkedin.com/in/ayokunle-shittu-560a9a162?utm_source=share&utm_campaign=share_via&utm_content&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="premium-shine px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2 premium-card-soft">
               <FaLinkedin className="text-blue-400" /> LinkedIn Profile
             </a>
           </div>

@@ -120,7 +120,6 @@ header {
 
 #about,
 #experience,
-#projects,
 #skills,
 #contacts,
 footer {
@@ -130,7 +129,6 @@ footer {
 
 #about::before,
 #experience::before,
-#projects::before,
 #skills::before,
 #contacts::before,
 footer::before {
@@ -146,7 +144,6 @@ footer::before {
 
 #about > *,
 #experience > *,
-#projects > *,
 #skills > *,
 #contacts > *,
 footer > * {

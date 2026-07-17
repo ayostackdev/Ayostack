@@ -6,7 +6,7 @@ import {
   SiFastapi,
   SiTypescript, SiNextdotjs, SiTailwindcss, 
   SiGit, SiGithub, SiPostgresql, SiDocker, SiVercel, SiRedis, 
-  SiCelery, SiPrisma, SiNestjs, SiSupabase
+  SiCelery, SiPrisma, SiNestjs, SiSupabase, SiSocketdotio
 } from "react-icons/si";
 
 // Consolidated Fa Imports
@@ -42,22 +42,23 @@ export default function Skills() {
     },
     
     {
-      title: "Real-Time & Messaging",
-      subtitle: "Event-driven architectures, caching strategies, and background task processing.",
-      skills: [
-        { name: "Redis", level: "Proficient", icon: <SiRedis className="w-6 h-6" color="#DC382D" /> },
-        { name: "Celery", level: "Proficient", icon: <SiCelery className="w-6 h-6" color="#A3C644" /> },
-      ],
-    },
-    
-    {
       title: "DevOps",
-      subtitle: "DevOps, CI/CD pipelines, version control, containerization, and cloud deployment infrastructure.",
+      subtitle: "CI/CD pipelines, version control, containerization, and cloud deployment infrastructure.",
       skills: [
         { name: "Git", level: "Advanced", icon: <SiGit className="w-6 h-6" color="#F05032" /> },
         { name: "GitHub", level: "Advanced", icon: <SiGithub className="w-6 h-6" color="#FFFFFF" /> },
         { name: "Vercel", level: "Proficient", icon: <SiVercel className="w-6 h-6" color="#FFFFFF" /> },
         { name: "Docker", level: "Proficient", icon: <SiDocker className="w-6 h-6" color="#2496ED" /> },
+      ],
+    },
+    {
+      title: "Real-Time & Messaging",
+      subtitle: "Event-driven architectures, caching strategies, and background task processing.",
+      skills: [
+        { name: "Celery", level: "Proficient", icon: <SiCelery className="w-6 h-6" color="#A3C644" /> },
+        { name: "BullMQ", level: "Proficient", icon: <FaCubes className="w-6 h-6" color="#FFFFFF" /> },
+        { name: "Redis", level: "Proficient", icon: <SiRedis className="w-6 h-6" color="#DC382D" /> },
+        { name: "Socket.IO", level: "Proficient", icon: <SiSocketdotio className="w-6 h-6" color="#FFFFFF" /> },
       ],
     },
   ];
@@ -68,13 +69,6 @@ export default function Skills() {
       items: [
         { name: "Ubuntu Linux Professional", issuer: "Canonical" },
         { name: "Docker Foundations", issuer: "Docker, Inc." },
-      ],
-    },
-    {
-      title: "Distributed Architecture & Communications",
-      items: [
-        { name: "Microservices Foundations", issuer: "Kong" },
-        { name: "Programmable Messaging & Voice", issuer: "Twilio" },
       ],
     },
     {

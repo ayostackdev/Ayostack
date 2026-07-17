@@ -26,9 +26,7 @@ export default function Header() {
           <Link href="#experience" className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Experience
           </Link>
-          <Link href="#projects" className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
-            Projects
-          </Link>
+
           <Link href="#skills" className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Skills
           </Link>
@@ -54,9 +52,7 @@ export default function Header() {
           <Link href="#experience" onClick={() => setIsOpen(false)} className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Experience
           </Link>
-          <Link href="#projects" onClick={() => setIsOpen(false)} className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
-            Projects
-          </Link>
+
           <Link href="#skills" onClick={() => setIsOpen(false)} className="inline-flex items-center rounded-full border border-blue-200/20 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-200 hover:bg-blue-500/20 hover:text-white transition-colors">
             Skills
           </Link>

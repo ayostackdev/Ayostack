@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaBriefcase } from "react-icons/fa";
 
@@ -10,6 +11,7 @@ const experiences = [
     location: "Abeokuta, Nigeria",
     date: "Sep 2025 - Present",
     link: "https://cssf-funaab.vercel.app",
+    image: "/CSSF-FUNAAB-LOGO.jpg",
     highlight:
       "Architected the organization's first centralized digital platform and custom admin dashboard, streamlining content management.",
   },
@@ -20,14 +22,6 @@ const experiences = [
     date: "Mar 2026 - Sep 2026",
     highlight:
       "Engineered automated data sync pipelines between PostgreSQL and Google Sheets, eliminating manual export bottlenecks.",
-  },
-  {
-    role: "Mathematics Teacher",
-    company: "New Era Primary School",
-    location: "Lagos, Nigeria",
-    date: "Sep 2019 - Sep 2020",
-    highlight:
-      "Taught 40+ students achieving a 95% pass rate through data-driven assessments and personalized instruction.",
   },
 ];
 
@@ -78,7 +72,17 @@ export default function Experience() {
                   </div>
 
                   <div className="flex items-center gap-2 text-sm text-blue-300/80 mb-2">
-                    <FaBriefcase className="w-3.5 h-3.5 text-blue-400/70" />
+                    {exp.image ? (
+                      <Image
+                        src={exp.image}
+                        alt={exp.company}
+                        width={28}
+                        height={28}
+                        className="w-7 h-7 rounded-full object-cover border border-blue-200/20"
+                      />
+                    ) : (
+                      <FaBriefcase className="w-3.5 h-3.5 text-blue-400/70" />
+                    )}
                     <span>{exp.company}</span>
                     <span className="text-blue-400/40">|</span>
                     <span className="text-blue-300/60">{exp.location}</span>
