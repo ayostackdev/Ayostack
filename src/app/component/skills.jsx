@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 // Consolidated Si Imports
 import { 
@@ -67,15 +68,15 @@ export default function Skills() {
     {
       title: "Cloud Infrastructure & Virtualization",
       items: [
-        { name: "Ubuntu Linux Professional", issuer: "Canonical" },
-        { name: "Docker Foundations", issuer: "Docker, Inc." },
+        { name: "Ubuntu Linux Professional", issuer: "Canonical", image: "/Canonical.png" },
+        { name: "Docker Foundations", issuer: "Docker, Inc.", image: "/docker_mark-logo_brandlogos.net_yetav.png" },
       ],
     },
     {
       title: "Data Engineering & Algorithmic Intelligence",
       items: [
-        { name: "Data Engineering Foundations", issuer: "Astronomer" },
-        { name: "Machine Learning with Python", issuer: "Anaconda" },
+        { name: "Data Engineering Foundations", issuer: "Astronomer", image: "/Astronomer.jpg" },
+        { name: "Machine Learning with Python", issuer: "Anaconda", image: "/anaconda.png" },
       ],
     },
   ];
@@ -190,8 +191,14 @@ export default function Skills() {
               </h3>
               <ul className="space-y-3 text-blue-200/80 text-sm md:text-base">
                 {certification.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-start gap-3">
-                    <span className="mt-1 inline-block h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_12px_rgba(103,232,249,0.75)]" />
+                  <li key={itemIndex} className="flex items-center gap-3">
+                    <Image
+                      src={item.image}
+                      alt={`${item.issuer} logo`}
+                      width={28}
+                      height={28}
+                      className="w-7 h-7 rounded-md object-contain"
+                    />
                     <span>
                       {item.name} <span className="text-blue-300">({item.issuer})</span>
                     </span>

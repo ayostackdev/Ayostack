@@ -20,6 +20,7 @@ const experiences = [
     company: "Sunfi",
     location: "Lagos, Nigeria",
     date: "Mar 2026 - Sep 2026",
+    image: "/sunfi.png",
     highlight:
       "Engineered automated data sync pipelines between PostgreSQL and Google Sheets, eliminating manual export bottlenecks.",
   },

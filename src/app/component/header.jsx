@@ -11,12 +11,10 @@ export default function Header() {
       <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4 relative">
         {/* Logo */}
 
-  <Image className="rounded-4xl h-18"
-  src="/file_0000000034ac622f83b2c662380ff859~2.png"
+  <img className="rounded-4xl"
+  src="/favicon.png"
   alt="Ayostack Logo"
-  width={100}
-  height={30}
-  priority /> 
+  style={{ width: "48px", height: "48px" }} /> 
         <h1 className="text-2xl font-extrabold tracking-[0.08em] premium-gradient-title">Ayostack</h1>
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-2">
