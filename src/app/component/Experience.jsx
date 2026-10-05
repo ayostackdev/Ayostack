@@ -6,7 +6,7 @@ import { FaBriefcase } from "react-icons/fa";
 
 const experiences = [
   {
-    role: "Lead Full-Stack Developer & Product Architect",
+    role: "Lead Full-Stack Engineer & Product Architect",
     company: "C&S Unification Funaab Chapel",
     location: "Abeokuta, Nigeria",
     date: "Sep 2025 - Present",
