@@ -16,7 +16,7 @@ const experiences = [
       "Architected the organization's first centralized digital platform and custom admin dashboard, streamlining content management.",
   },
   {
-    role: "Data Infrastructure & Software Intern",
+    role: "Data Analytics Intern",
     company: "Sunfi",
     location: "Lagos, Nigeria",
     date: "Mar 2026 - Sep 2026",
