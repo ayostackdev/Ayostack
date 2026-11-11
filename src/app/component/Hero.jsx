@@ -121,7 +121,16 @@ export default function HeroSection() {
                       className={`group relative inline-flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border border-blue-200/10 bg-gradient-to-br from-[#0d1b3a]/80 to-[#071026]/90 text-blue-300/70 shadow-[0_8px_24px_rgba(2,8,24,0.5),inset_0_1px_0_rgba(255,255,255,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-300/30 hover:shadow-[0_12px_32px_rgba(2,8,24,0.7),0_0_20px_rgba(56,189,248,0.15),inset_0_1px_0_rgba(255,255,255,0.08)] ${tech.hoverClass}`}
                     >
                       <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.3)] group-hover:scale-105 transition-transform duration-300">
-                        <Icon size={17} color={tech.color} className="drop-shadow-[0_0_6px_rgba(125,211,252,0.15)]" />
+                        {tech.name === "Python" ? (
+                          <span className="relative flex w-[17px] h-[17px]">
+                            <Icon size={17} color="#3776AB" className="drop-shadow-[0_0_6px_rgba(125,211,252,0.15)]" />
+                            <span className="absolute inset-0 overflow-hidden" style={{ clipPath: "inset(50% 0 0 0)" }}>
+                              <Icon size={17} color="#FFD43B" />
+                            </span>
+                          </span>
+                        ) : (
+                          <Icon size={17} color={tech.color} className="drop-shadow-[0_0_6px_rgba(125,211,252,0.15)]" />
+                        )}
                       </div>
                       <span className="text-[13px] font-medium tracking-wide">{tech.name}</span>
                     </motion.div>
