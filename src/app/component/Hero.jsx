@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaCode, FaServer, FaDatabase, FaLightbulb, FaCubes } from "react-icons/fa";
+import { FaPython } from "react-icons/fa6";
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -47,6 +48,7 @@ const techStack = [
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6", hoverClass: "hover:text-sky-300" },
   { name: "Celery", icon: SiCelery, color: "#37814A", hoverClass: "hover:text-green-400" },
   { name: "FastAPI", icon: SiFastapi, color: "#009688", hoverClass: "hover:text-teal-300" },
+  { name: "Python", icon: FaPython, color: "#3776AB", hoverClass: "hover:text-blue-300" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1", hoverClass: "hover:text-blue-300" },
   { name: "Supabase", icon: SiSupabase, color: "#3ECF8E", hoverClass: "hover:text-emerald-400" },
   { name: "Redis", icon: SiRedis, color: "#DC382D", hoverClass: "hover:text-red-400" },
@@ -72,7 +74,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="flex-1 text-center md:text-left space-y-6"
           >
-            <p className="inline-flex premium-card-soft px-4 py-2 rounded-full text-blue-300 font-mono tracking-[0.18em] text-[11px] uppercase">Open to High-Impact 2026 Opportunities</p>
+            <p className="inline-flex premium-card-soft px-4 py-2 rounded-full text-blue-300 font-mono tracking-[0.18em] text-[11px] uppercase">Open to High-Impact 2027 Opportunities</p>
 
             <p className="text-lg sm:text-xl text-blue-200/80 font-medium">
               Hi, I&apos;m <span className="text-white font-semibold">Ayokunle Shittu</span>
