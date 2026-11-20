@@ -15,6 +15,7 @@ import {
   SiGit,
   SiFastapi,
   SiReact,
+  SiJavascript,
 } from "react-icons/si";
 import styles from './GlowingBorder.module.css';
 
@@ -53,6 +54,7 @@ const techStack = [
   { name: "Supabase", icon: SiSupabase, color: "#3ECF8E", hoverClass: "hover:text-emerald-400" },
   { name: "Redis", icon: SiRedis, color: "#DC382D", hoverClass: "hover:text-red-400" },
   { name: "React", icon: SiReact, color: "#61DAFB", hoverClass: "hover:text-cyan-300" },
+  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", hoverClass: "hover:text-yellow-300" },
   { name: "Docker", icon: SiDocker, color: "#2496ED", hoverClass: "hover:text-sky-400" },
   { name: "Git", icon: SiGit, color: "#F05032", hoverClass: "hover:text-orange-400" },
   { name: "shadcn/ui", icon: FaCubes, color: "#A855F7", hoverClass: "hover:text-purple-400" },
